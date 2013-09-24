@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:paddingLeft="58.0dip"
+    android:paddingTop="24.0dip" >
+
+    <com.wefeng.launcher.widget.CustomDrawingOrderLayout
+        android:id="@+id/tab_settings_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/tab_settings_account_button"
+            android:layout_width="@dimen/main_page_short_edge_length"
+            android:layout_height="@dimen/main_page_long_edge_length"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/image_button_bg"
+            android:focusable="true" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/tab_settings_account_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_settings_shopping_button"
+            android:layout_width="@dimen/main_page_long_edge_length"
+            android:layout_height="@dimen/main_page_long_edge_length"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/main_page_shading_offset"
+            android:layout_toRightOf="@id/tab_settings_account_button"
+            android:background="@drawable/image_button_bg"
+            android:focusable="true" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/tab_settings_shopping_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_settings_favor_button"
+            android:layout_width="@dimen/main_page_long_edge_length"
+            android:layout_height="@dimen/main_page_short_edge_length"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/main_page_shading_offset"
+            android:layout_toRightOf="@id/tab_settings_shopping_button"
+            android:background="@drawable/image_button_bg"
+            android:focusable="true" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/tab_settings_favor_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_settings_history_button"
+            android:layout_width="@dimen/main_page_long_edge_length"
+            android:layout_height="@dimen/main_page_short_edge_length"
+            android:layout_below="@id/tab_settings_favor_button"
+            android:layout_marginLeft="@dimen/main_page_shading_offset"
+            android:layout_marginTop="@dimen/main_page_shading_offset"
+            android:layout_toRightOf="@id/tab_settings_shopping_button"
+            android:background="@drawable/image_button_bg"
+            android:focusable="true" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/tab_settings_history_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_settings_system_settings_button"
+            android:layout_width="@dimen/main_page_short_edge_length"
+            android:layout_height="@dimen/main_page_short_edge_length"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/main_page_shading_offset"
+            android:layout_toRightOf="@id/tab_settings_favor_button"
+            android:background="@drawable/image_button_bg"
+            android:focusable="true" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/tab_settings_system_settings_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_settings_help_button"
+            android:layout_width="@dimen/main_page_short_edge_length"
+            android:layout_height="@dimen/main_page_short_edge_length"
+            android:layout_below="@id/tab_settings_system_settings_button"
+            android:layout_marginLeft="@dimen/main_page_shading_offset"
+            android:layout_marginTop="@dimen/main_page_shading_offset"
+            android:layout_toRightOf="@id/tab_settings_history_button"
+            android:background="@drawable/image_button_bg"
+            android:focusable="true" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/tab_settings_help_image" />
+        </LinearLayout>
+    </com.wefeng.launcher.widget.CustomDrawingOrderLayout>
+
+</LinearLayout>

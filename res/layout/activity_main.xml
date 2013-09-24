@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_page_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/qiyilogo_id"
+        android:layout_width="@dimen/qiyilogo_width"
+        android:layout_height="@dimen/qiyilogo_height"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/qiyilogo_marginLeft"
+        android:layout_marginTop="@dimen/qiyilogo_marginTop"
+        android:src="@drawable/homepage_logo" />
+
+    <ImageView
+        android:id="@+id/main_page_search_button"
+        android:layout_width="@dimen/search_button_width"
+        android:layout_height="@dimen/search_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/search_button_marginright"
+        android:layout_marginTop="@dimen/search_button_marginTop"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:id="@+id/viewpager_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/homepage_viewpager_layout_marginTop"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_page_view_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_page_bottom_pannel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/bottom_pannel_marginBottom"
+        android:paddingLeft="@dimen/bottom_pannel_paddingLeft"
+        android:paddingRight="@dimen/bottom_pannel_paddingRight" >
+
+        <ImageView
+            android:id="@+id/tab_recommend_text"
+            android:layout_width="@dimen/tab_text_width"
+            android:layout_height="@dimen/tab_text_height"
+            android:layout_weight="1.0"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/tab_tops_text"
+            android:layout_width="@dimen/tab_text_width"
+            android:layout_height="@dimen/tab_text_height"
+            android:layout_weight="1.0"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/tab_channels_text"
+            android:layout_width="@dimen/tab_text_width"
+            android:layout_height="@dimen/tab_text_height"
+            android:layout_weight="1.0"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/tab_settings_text"
+            android:layout_width="@dimen/tab_text_width"
+            android:layout_height="@dimen/tab_text_height"
+            android:layout_weight="1.0"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/time_text_layout_marginBottom"
+        android:layout_marginRight="@dimen/time_text_layout_marginRight"
+        android:focusable="false"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/main_page_phone_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:src="@drawable/main_page_image_phone_connect" />
+
+        <TextView
+            android:id="@+id/main_page_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/time_text_marginLeft"
+            android:layout_weight="1.0"
+            android:focusable="false"
+            android:text="19:20"
+            android:textColor="#ff999999"
+            android:textSize="30.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/main_page_phone_image_tip"
+        android:layout_width="164.0dip"
+        android:layout_height="99.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/phone_image_tip_marginBottom"
+        android:layout_marginRight="@dimen/phone_image_tip_marginRight"
+        android:src="@drawable/main_page_image_phone_connect_tip" />
+
+    <com.wefeng.launcher.widget.ProgressBar
+        android:id="@+id/update_data_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <com.wefeng.launcher.widget.ExceptionDialog
+        android:id="@+id/exception_dialog_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/no_program_dialog_id"
+        android:layout_width="@dimen/no_program_alert_dialog_width"
+        android:layout_height="@dimen/no_program_alert_dialog_height"
+        android:layout_centerInParent="true"
+        android:alpha="0.9"
+        android:background="@drawable/tip_shopping"
+        android:visibility="invisible" />
+
+</RelativeLayout>

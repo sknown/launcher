@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/exception_dialog_width"
+    android:layout_height="@dimen/exception_dialog_height"
+    android:background="@drawable/exception_dialog"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/exception_msg_textview_id"
+        android:layout_width="@dimen/exception_dialog_width"
+        android:layout_height="@dimen/exception_dialog_message1_height"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="@dimen/exception_dialog_linespace"
+        android:paddingTop="@dimen/exception_dialog_msg1_paddingtop"
+        android:textColor="@color/search_nothing_text_error"
+        android:textSize="@dimen/exception_dialog_msg1_text_font_size" />
+
+    <TextView
+        android:id="@+id/exception_errorcode_textview_id"
+        android:layout_width="@dimen/exception_dialog_width"
+        android:layout_height="@dimen/exception_dialog_message2_height"
+        android:layout_marginTop="@dimen/exception_dialog_msg2_margintop"
+        android:gravity="center_horizontal"
+        android:textColor="@color/search_nothing_text_error"
+        android:textSize="@dimen/exception_dialog_msg2_text_font_size" />
+
+</LinearLayout>

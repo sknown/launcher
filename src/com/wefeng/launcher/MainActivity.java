@@ -5,6 +5,7 @@ import java.util.List;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
@@ -13,6 +14,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +31,8 @@ public class MainActivity extends Activity {
 		
 		mViewPager = (ViewPager) findViewById(R.id.main_page_view_page); 
 		addPage();
+		
+		mViewPager.requestFocus();
 	}
 
 	public void addPage()
@@ -106,10 +110,10 @@ public class MainActivity extends Activity {
         mViewPager.setOnPageChangeListener(new MyOnPageChangeListener()); 
         
         
-        TextView textView1 = (TextView)this.findViewById(R.id.tab_recommend_text);
-        TextView textView2 = (TextView)this.findViewById(R.id.tab_tops_text);
-        TextView textView3 = (TextView)this.findViewById(R.id.tab_channels_text);
-        TextView textView4 = (TextView)this.findViewById(R.id.tab_settings_text);
+        RadioButton textView1 = (RadioButton)this.findViewById(R.id.tab_recommend_text);
+        RadioButton textView2 = (RadioButton)this.findViewById(R.id.tab_tops_text);
+        RadioButton textView3 = (RadioButton)this.findViewById(R.id.tab_channels_text);
+        RadioButton textView4 = (RadioButton)this.findViewById(R.id.tab_settings_text);
         
         textView1.setOnClickListener(new MyOnClickListener(0));  
         textView2.setOnClickListener(new MyOnClickListener(1));  

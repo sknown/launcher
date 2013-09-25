@@ -46,33 +46,35 @@
         android:paddingLeft="@dimen/bottom_pannel_paddingLeft"
         android:paddingRight="@dimen/bottom_pannel_paddingRight" >
 
-        <ImageView
+        <RadioButton
             android:id="@+id/tab_recommend_text"
             android:layout_width="@dimen/tab_text_width"
             android:layout_height="@dimen/tab_text_height"
             android:layout_weight="1.0"
             android:focusable="true" />
 
-        <ImageView
+        <RadioButton
             android:id="@+id/tab_tops_text"
             android:layout_width="@dimen/tab_text_width"
             android:layout_height="@dimen/tab_text_height"
             android:layout_weight="1.0"
             android:focusable="true" />
 
-        <ImageView
+        <RadioButton
             android:id="@+id/tab_channels_text"
             android:layout_width="@dimen/tab_text_width"
             android:layout_height="@dimen/tab_text_height"
             android:layout_weight="1.0"
             android:focusable="true" />
 
-        <ImageView
+        <RadioButton
             android:id="@+id/tab_settings_text"
             android:layout_width="@dimen/tab_text_width"
             android:layout_height="@dimen/tab_text_height"
             android:layout_weight="1.0"
             android:focusable="true" />
+
+
     </LinearLayout>
 
     <LinearLayout

@@ -18,6 +18,10 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.wefeng.launcher.widget.TabApp;
+import com.wefeng.launcher.widget.TabChannels;
+import com.wefeng.launcher.widget.TabTop;
+
 public class MainActivity extends Activity {
 
 	private ArrayList<View> mViewList = null;
@@ -39,18 +43,21 @@ public class MainActivity extends Activity {
 	{
 		LayoutInflater lf = getLayoutInflater().from(this);
 		
-		View view1 = lf.inflate(R.layout.view_tab_apps, null);
-		View view2 = lf.inflate(R.layout.view_tab_tops, null);
-		View view3 = lf.inflate(R.layout.view_tab_channels, null);
+		TabApp view1 = (TabApp)new TabApp(this);
+        TabTop view2 = (TabTop)new TabTop(this);
+
+        TabChannels view3 = new TabChannels(this);
 		View view4 = lf.inflate(R.layout.view_tab_settings, null);
-		
-		mViewList = new ArrayList<View>();// 将要分页显示的View装入数组中
+
+        view2.initImage();
+        view3.initImage();
+		mViewList = new ArrayList<View>();
 		mViewList.add(view1);
 		mViewList.add(view2);
 		mViewList.add(view3);
 		mViewList.add(view4);
 		
-		mTitleList = new ArrayList<String>();// 每个页面的Title数据  
+		mTitleList = new ArrayList<String>();
 		mTitleList.add("first");  
 		mTitleList.add("channel");  
 		mTitleList.add("apps");
@@ -86,21 +93,12 @@ public class MainActivity extends Activity {
             @Override  
             public CharSequence getPageTitle(int position) {  
   
-                return mTitleList.get(position);//直接用适配器来完成标题的显示，所以从上面可以看到，我们没有使用PagerTitleStrip。当然你可以使用。  
-  
+                return mTitleList.get(position);
             }  
   
             @Override  
             public Object instantiateItem(ViewGroup container, int position) {  
-                container.addView(mViewList.get(position));  
-//                weibo_button=(Button) findViewById(R.id.button1);//这个需要注意，我们是在重写adapter里面实例化button组件的，如果你在onCreate()方法里这样做会报错的。  
-//                weibo_button.setOnClickListener(new OnClickListener() {  
-//                      
-//                    public void onClick(View v) {  
-//                        intent=new Intent(ViewPagerDemo.this,WeiBoActivity.class);  
-//                        startActivity(intent);  
-//                    }  
-//                });  
+                container.addView(mViewList.get(position));
                 return mViewList.get(position);  
             }  
   
@@ -151,7 +149,7 @@ public class MainActivity extends Activity {
         }  
   
         public void onPageSelected(int arg0) {  
-            Toast.makeText(MainActivity.this, "您选择了"+ mViewPager.getCurrentItem()+"页卡", Toast.LENGTH_SHORT).show();  
+            Toast.makeText(MainActivity.this, "锟斤拷选锟斤拷锟斤拷"+ mViewPager.getCurrentItem()+"页锟斤拷", Toast.LENGTH_SHORT).show();  
         }  
           
     }  

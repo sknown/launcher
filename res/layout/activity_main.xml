@@ -51,28 +51,36 @@
             android:layout_width="@dimen/tab_text_width"
             android:layout_height="@dimen/tab_text_height"
             android:layout_weight="1.0"
-            android:focusable="true" />
+            android:focusable="true"
+            android:button="@null"
+            android:background="@drawable/main_page_menu_recommend_bg_00"/>
 
         <RadioButton
             android:id="@+id/tab_tops_text"
             android:layout_width="@dimen/tab_text_width"
             android:layout_height="@dimen/tab_text_height"
             android:layout_weight="1.0"
-            android:focusable="true" />
+            android:focusable="true"
+            android:button="@null"
+            android:background="@drawable/main_page_menu_tops_bg_00"/>
 
         <RadioButton
             android:id="@+id/tab_channels_text"
             android:layout_width="@dimen/tab_text_width"
             android:layout_height="@dimen/tab_text_height"
             android:layout_weight="1.0"
-            android:focusable="true" />
+            android:focusable="true"
+            android:button="@null"
+            android:background="@drawable/main_page_menu_apps_bg_00"/>
 
         <RadioButton
             android:id="@+id/tab_settings_text"
             android:layout_width="@dimen/tab_text_width"
             android:layout_height="@dimen/tab_text_height"
             android:layout_weight="1.0"
-            android:focusable="true" />
+            android:focusable="true"
+            android:button="@null"
+            android:background="@drawable/main_page_menu_pictures_bg_00"/>
 
 
     </LinearLayout>

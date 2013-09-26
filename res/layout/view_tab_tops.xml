@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal" >
 
-        <com.wefeng.launcher.widget.TabRecommendItemView
+        <com.wefeng.launcher.widget.TabTopItemView
             android:id="@+id/tab_tops_hot_button"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_long_edge_length"
@@ -20,7 +20,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabRecommendItemView
+        <com.wefeng.launcher.widget.TabTopItemView
             android:id="@+id/tab_tops_image_button_1"
             android:layout_width="@dimen/main_page_long_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -30,7 +30,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabRecommendItemView
+        <com.wefeng.launcher.widget.TabTopItemView
             android:id="@+id/tab_tops_image_button_2"
             android:layout_width="@dimen/main_page_long_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -41,7 +41,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabRecommendItemView
+        <com.wefeng.launcher.widget.TabTopItemView
             android:id="@+id/tab_tops_haoping_button"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_long_edge_length"
@@ -51,7 +51,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabRecommendItemView
+        <com.wefeng.launcher.widget.TabTopItemView
             android:id="@+id/tab_tops_image_button_3"
             android:layout_width="@dimen/main_page_long_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -61,7 +61,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabRecommendItemView
+        <com.wefeng.launcher.widget.TabTopItemView
             android:id="@+id/tab_tops_image_button_4"
             android:layout_width="@dimen/main_page_long_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"

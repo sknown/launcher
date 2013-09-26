@@ -63,8 +63,3 @@ public class TabChannelsItemView extends FrameLayout
     this.mHighLightImage.setVisibility(4);
   }
 }
-
-/* Location:           D:\ApktoolGui v2.0 Final\爱奇�?.0forTV_7po_dex2jar.jar
- * Qualified Name:     com.qiyi.video.widget.TabChannelsItemView
- * JD-Core Version:    0.6.0
- */

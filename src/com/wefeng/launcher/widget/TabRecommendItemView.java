@@ -51,11 +51,11 @@ public class TabRecommendItemView extends FrameLayout
   {
     if (paramBoolean)
     {
-      this.mRecommendTitle.setTextColor(this.mContext.getResources().getColor(2131034137));
+      this.mRecommendTitle.setTextColor(this.mContext.getResources().getColor(R.color.album_text_focus));
       this.mHighLightImage.setVisibility(0);
       return;
     }
-    this.mRecommendTitle.setTextColor(this.mContext.getResources().getColor(2131034136));
+    this.mRecommendTitle.setTextColor(this.mContext.getResources().getColor(R.color.album_text_normal));
     this.mHighLightImage.setVisibility(4);
   }
 

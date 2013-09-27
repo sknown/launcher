@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,8 +28,13 @@ public class MainActivity extends Activity {
 	private ArrayList<View> mViewList = null;
 	private ArrayList<String> mTitleList = null;
 	private ViewPager mViewPager = null;
-	
-	@Override
+    private RadioButton mRadioTitle1;
+    private RadioButton mRadioTitle2;
+    private RadioButton mRadioTitle3;
+    private RadioButton mRadioTitle4;
+    private RadioGroup mRadioGroup = null;
+
+    @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
@@ -37,6 +43,7 @@ public class MainActivity extends Activity {
 		addPage();
 		
 		mViewPager.requestFocus();
+        mRadioTitle1.setChecked(true);
 	}
 
 	public void addPage()
@@ -108,28 +115,59 @@ public class MainActivity extends Activity {
         mViewPager.setOnPageChangeListener(new MyOnPageChangeListener()); 
         
         
-        RadioButton textView1 = (RadioButton)this.findViewById(R.id.tab_recommend_text);
-        RadioButton textView2 = (RadioButton)this.findViewById(R.id.tab_tops_text);
-        RadioButton textView3 = (RadioButton)this.findViewById(R.id.tab_channels_text);
-        RadioButton textView4 = (RadioButton)this.findViewById(R.id.tab_settings_text);
+        mRadioTitle1 = (RadioButton)this.findViewById(R.id.tab_recommend_text);
+        mRadioTitle2 = (RadioButton)this.findViewById(R.id.tab_tops_text);
+        mRadioTitle3 = (RadioButton)this.findViewById(R.id.tab_channels_text);
+        mRadioTitle4 = (RadioButton)this.findViewById(R.id.tab_settings_text);
         
-        textView1.setOnClickListener(new MyOnClickListener(0));  
-        textView2.setOnClickListener(new MyOnClickListener(1));  
-        textView3.setOnClickListener(new MyOnClickListener(2));
-        textView4.setOnClickListener(new MyOnClickListener(3));
+        //mRadioTitle1.setOnClickListener(new MyOnClickListener(0));
+        mRadioTitle1.setOnFocusChangeListener(new RadioFocusChangeListener(0));
 
+        //mRadioTitle2.setOnClickListener(new MyOnClickListener(1));
+        mRadioTitle2.setOnFocusChangeListener(new RadioFocusChangeListener(1));
+
+        //mRadioTitle3.setOnClickListener(new MyOnClickListener(2));
+        mRadioTitle3.setOnFocusChangeListener(new RadioFocusChangeListener(2));
+
+        //mRadioTitle4.setOnClickListener(new MyOnClickListener(3));
+        mRadioTitle4.setOnFocusChangeListener(new RadioFocusChangeListener(3));
+
+        mRadioGroup = (RadioGroup)findViewById(R.id.main_page_bottom_pannel);
         
-    } 
-    private class MyOnClickListener implements OnClickListener{  
-        private int index=0;  
-        public MyOnClickListener(int i){  
-            index=i;  
-        }  
-        public void onClick(View v) {  
-        	selectPage(index);              
-        }  
-          
-    } 
+    }
+    private class RadioFocusChangeListener implements View.OnFocusChangeListener {
+
+        private int mIndex=0;
+
+        public RadioFocusChangeListener(int index)
+        {
+            mIndex = index;
+        }
+        @Override
+        public void onFocusChange(View view, boolean b) {
+            RadioButton rb = (RadioButton)view;
+
+            if(b)
+            {
+                if(!rb.isChecked())
+                {
+                    rb.setChecked(true);
+                    selectPage(mIndex);
+                }
+            }
+        }
+    }
+
+//    private class MyOnClickListener implements OnClickListener{
+//        private int index=0;
+//        public MyOnClickListener(int i){
+//            index=i;
+//        }
+//        public void onClick(View v) {
+//        	selectPage(index);
+//        }
+//
+//    }
     
 	public void selectPage(int index)
 	{
@@ -148,8 +186,13 @@ public class MainActivity extends Activity {
               
         }  
   
-        public void onPageSelected(int arg0) {  
-            Toast.makeText(MainActivity.this, "��ѡ����"+ mViewPager.getCurrentItem()+"ҳ��", Toast.LENGTH_SHORT).show();  
+        public void onPageSelected(int arg0) {
+            RadioButton rb = (RadioButton)mRadioGroup.getChildAt(arg0);
+
+            if(!rb.isChecked())
+            {
+                rb.setChecked(true);
+            }
         }  
           
     }  

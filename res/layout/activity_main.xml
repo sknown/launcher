@@ -11,7 +11,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="@dimen/qiyilogo_marginLeft"
         android:layout_marginTop="@dimen/qiyilogo_marginTop"
-        android:src="@drawable/homepage_logo" />
+        android:src="@drawable/mylogo" />
 
     <ImageView
         android:id="@+id/main_page_search_button"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/homepage_viewpager_layout_marginTop"
         android:gravity="center_horizontal"
-        android:orientation="vertical" >
+        android:orientation="horizontal" >
 
         <android.support.v4.view.ViewPager
             android:id="@+id/main_page_view_page"
@@ -37,14 +37,15 @@
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
-    <LinearLayout
+    <RadioGroup
         android:id="@+id/main_page_bottom_pannel"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/bottom_pannel_marginBottom"
         android:paddingLeft="@dimen/bottom_pannel_paddingLeft"
-        android:paddingRight="@dimen/bottom_pannel_paddingRight" >
+        android:paddingRight="@dimen/bottom_pannel_paddingRight"
+        android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/tab_recommend_text"
@@ -52,8 +53,11 @@
             android:layout_height="@dimen/tab_text_height"
             android:layout_weight="1.0"
             android:focusable="true"
-            android:button="@null"
-            android:background="@drawable/main_page_menu_recommend_bg_00"/>
+            android:text="@string/watch_tv"
+            android:textSize="30dp"
+            android:background="@drawable/sel_zone_title_btn"
+            android:gravity="center_vertical|center_horizontal"
+            android:button="@null" />
 
         <RadioButton
             android:id="@+id/tab_tops_text"
@@ -61,8 +65,11 @@
             android:layout_height="@dimen/tab_text_height"
             android:layout_weight="1.0"
             android:focusable="true"
-            android:button="@null"
-            android:background="@drawable/main_page_menu_tops_bg_00"/>
+            android:background="@drawable/sel_zone_title_btn"
+            android:text="@string/popular"
+            android:textSize="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:button="@null" />
 
         <RadioButton
             android:id="@+id/tab_channels_text"
@@ -70,8 +77,11 @@
             android:layout_height="@dimen/tab_text_height"
             android:layout_weight="1.0"
             android:focusable="true"
-            android:button="@null"
-            android:background="@drawable/main_page_menu_apps_bg_00"/>
+            android:background="@drawable/sel_zone_title_btn"
+            android:text="@string/application"
+            android:textSize="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:button="@null" />
 
         <RadioButton
             android:id="@+id/tab_settings_text"
@@ -79,11 +89,14 @@
             android:layout_height="@dimen/tab_text_height"
             android:layout_weight="1.0"
             android:focusable="true"
-            android:button="@null"
-            android:background="@drawable/main_page_menu_pictures_bg_00"/>
+            android:background="@drawable/sel_zone_title_btn"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/settings"
+            android:textSize="30dp"
+            android:button="@null" />
 
 
-    </LinearLayout>
+    </RadioGroup>
 
     <LinearLayout
         android:layout_width="wrap_content"

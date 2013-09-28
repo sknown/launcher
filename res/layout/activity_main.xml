@@ -6,8 +6,8 @@
 
     <ImageView
         android:id="@+id/qiyilogo_id"
-        android:layout_width="@dimen/qiyilogo_width"
-        android:layout_height="@dimen/qiyilogo_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="@dimen/qiyilogo_marginLeft"
         android:layout_marginTop="@dimen/qiyilogo_marginTop"

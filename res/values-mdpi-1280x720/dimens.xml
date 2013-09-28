@@ -13,8 +13,8 @@
     <dimen name="bottom_pannel_marginBottom">40.0dip</dimen>
     <dimen name="bottom_pannel_paddingLeft">270.0dip</dimen>
     <dimen name="bottom_pannel_paddingRight">270.0dip</dimen>
-    <dimen name="tab_text_width">95.0dip</dimen>
-    <dimen name="tab_text_height">50.0dip</dimen>
+    <dimen name="tab_text_width">184.0dip</dimen>
+    <dimen name="tab_text_height">46.0dip</dimen>
     <dimen name="time_text_layout_marginBottom">10.0dip</dimen>
     <dimen name="time_text_layout_marginRight">20.0dip</dimen>
     <dimen name="time_text_marginLeft">5.0dip</dimen>

@@ -19,7 +19,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.wefeng.launcher.widget.TabApp;
+import com.wefeng.launcher.widget.TabWatchTv;
 import com.wefeng.launcher.widget.TabChannels;
 import com.wefeng.launcher.widget.TabTop;
 
@@ -50,12 +50,13 @@ public class MainActivity extends Activity {
 	{
 		LayoutInflater lf = getLayoutInflater().from(this);
 		
-		TabApp view1 = (TabApp)new TabApp(this);
+		TabWatchTv view1 = (TabWatchTv)new TabWatchTv(this);
         TabTop view2 = (TabTop)new TabTop(this);
 
         TabChannels view3 = new TabChannels(this);
 		View view4 = lf.inflate(R.layout.view_tab_settings, null);
 
+        view1.initImage();
         view2.initImage();
         view3.initImage();
 		mViewList = new ArrayList<View>();

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal" >
 
-        <LinearLayout
+        <com.wefeng.launcher.widget.TabWatchTvItemView
             android:id="@+id/tab_recommend_history_button"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -21,13 +21,13 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" >
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:src="@drawable/tab_recommend_history" />
-        </LinearLayout>
+            <!--<ImageView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:src="@drawable/tab_recommend_history" />-->
+        </com.wefeng.launcher.widget.TabWatchTvItemView>
 
-        <LinearLayout
+        <com.wefeng.launcher.widget.TabWatchTvItemView
             android:id="@+id/tab_recommend_7_day_button"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -37,13 +37,13 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" >
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:src="@drawable/tab_recommend_7_day" />
-        </LinearLayout>
+            <!--<ImageView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:src="@drawable/tab_recommend_7_day" />-->
+        </com.wefeng.launcher.widget.TabWatchTvItemView>
 
-        <LinearLayout
+        <com.wefeng.launcher.widget.TabWatchTvItemView
             android:id="@+id/tab_recommend_image_button_1"
             android:layout_width="@dimen/main_page_long_edge_length"
             android:layout_height="@dimen/main_page_long_edge_length"
@@ -53,13 +53,13 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" >
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:src="@drawable/tab_recommend_image_1_temp" />
-        </LinearLayout>
+            <!--<ImageView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:src="@drawable/taijie_0000_watch_tv" />-->
+        </com.wefeng.launcher.widget.TabWatchTvItemView>
 
-        <LinearLayout
+        <com.wefeng.launcher.widget.TabWatchTvItemView
             android:id="@+id/tab_recommend_image_button_2"
             android:layout_width="@dimen/main_page_long_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -69,13 +69,13 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" >
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:src="@drawable/tab_recommend_image_2_temp" />
-        </LinearLayout>
+            <!--<ImageView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:src="@drawable/tab_recommend_image_2_temp" />-->
+        </com.wefeng.launcher.widget.TabWatchTvItemView>
 
-        <LinearLayout
+        <com.wefeng.launcher.widget.TabWatchTvItemView
             android:id="@+id/tab_recommend_image_button_3"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -86,13 +86,13 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" >
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:src="@drawable/tab_recommend_image_3_temp" />
-        </LinearLayout>
+            <!--<ImageView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:src="@drawable/tab_recommend_image_3_temp" />-->
+        </com.wefeng.launcher.widget.TabWatchTvItemView>
 
-        <LinearLayout
+        <com.wefeng.launcher.widget.TabWatchTvItemView
             android:id="@+id/tab_recommend_image_button_4"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -103,13 +103,13 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" >
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:src="@drawable/tab_recommend_image_4_temp" />
-        </LinearLayout>
+            <!--<ImageView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:src="@drawable/tab_recommend_image_4_temp" />-->
+        </com.wefeng.launcher.widget.TabWatchTvItemView>
 
-        <LinearLayout
+        <com.wefeng.launcher.widget.TabWatchTvItemView
             android:id="@+id/tab_recommend_image_button_5"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_long_edge_length"
@@ -119,11 +119,11 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" >
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:src="@drawable/tab_recommend_image_5_temp" />
-        </LinearLayout>
+            <!--<ImageView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:src="@drawable/tab_recommend_image_5_temp" />-->
+        </com.wefeng.launcher.widget.TabWatchTvItemView>
     </com.wefeng.launcher.widget.CustomDrawingOrderLayout>
 
 </LinearLayout>

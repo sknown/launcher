@@ -7,4 +7,10 @@
     <string name="popular">流行榜</string>
     <string name="application">应用</string>
     <string name="settings">设置</string>
+    <string name="ifeng_new">凤凰新闻</string>
+    <string name="cartoon">儿童动漫</string>
+    <string name="movie_and_soap_drama">电影电视剧</string>
+    <string name="education_online">网上课程</string>
+    <string name="fun_time">轻松一刻</string>
+    <string name="multi_screen">手机多屏</string>
 </resources>

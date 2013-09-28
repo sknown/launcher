@@ -4,6 +4,7 @@
     <item android:drawable="@drawable/bg_b" android:state_focused="true" android:state_pressed="false"/>
     <item android:drawable="@drawable/bg_b" android:state_focused="true" android:state_pressed="true"/>
     <item android:drawable="@drawable/bg_b" android:state_focused="false" android:state_pressed="true"/>
-    <item android:drawable="@drawable/bg_a"/>
+    <item android:drawable="@drawable/bg_a" />
+
 
 </selector>

@@ -88,7 +88,7 @@ public class TabWatchTv extends FrameLayout {
         this.mAppButton_01.setWatchTvImageRes(R.drawable.tab_app_0000_fun_time );
         this.mAppButton_02.setWatchTvImageRes(R.drawable.tab_app_0001_qrcode);
         this.mAppButton_03.setWatchTvImageRes(R.drawable.taijie_0000_watch_tv);
-        this.mAppButton_04.setWatchTvImageRes(R.drawable.tab_recommend_image_2_temp);
+        this.mAppButton_04.setWatchTvImageRes(R.drawable.tab_app_0000_ifeng_new);
         this.mAppButton_05.setWatchTvImageRes(R.drawable.tab_recommend_image_3_temp);
         this.mAppButton_06.setWatchTvImageRes(R.drawable.tab_recommend_image_4_temp);
         this.mAppButton_07.setWatchTvImageRes(R.drawable.tab_recommend_image_5_temp);

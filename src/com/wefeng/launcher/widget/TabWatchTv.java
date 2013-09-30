@@ -1,6 +1,8 @@
 package com.wefeng.launcher.widget;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.ResolveInfo;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.wefeng.launcher.R;
+
+import java.util.ArrayList;
 
 /**
  * Created by Administrator on 13-9-26.
@@ -57,6 +61,7 @@ public class TabWatchTv extends FrameLayout {
         super(paramContext, paramAttributeSet, paramInt);
         this.mContext = paramContext;
         init();
+        initApp();
     }
 
     private void init()
@@ -81,6 +86,23 @@ public class TabWatchTv extends FrameLayout {
         mAppButton_06.setOnFocusChangeListener(this.mFocusListener);
         mAppButton_07.setOnFocusChangeListener(this.mFocusListener);
 
+        mAppButton_01.setOnClickListener(new MyOnClock(1));
+        mAppButton_02.setOnClickListener(new MyOnClock(2));
+
+    }
+
+    private class MyOnClock implements View.OnClickListener
+    {
+        private int mIndex = 0;
+
+        public MyOnClock(int index)
+        {
+            mIndex = index;
+        }
+        @Override
+        public void onClick(View v) {
+            launchApp(mIndex);
+        }
     }
 
     public void initImage()
@@ -101,4 +123,27 @@ public class TabWatchTv extends FrameLayout {
         mAppButton_06.setWatchTvTitleText(R.string.movie_and_soap_drama);
         mAppButton_07.setWatchTvTitleText(R.string.education_online);
     }
+
+    ArrayList<String> mPackageNameList = new ArrayList<String>();
+
+    private void initApp()
+    {
+        mPackageNameList.add("com.polarbit.ragingthunder");
+        mPackageNameList.add("com.dami.store");
+        mPackageNameList.add("com.togic.livevideo");
+        mPackageNameList.add("com.ifeng.easyVideo");
+        mPackageNameList.add("com.ikantv.activity");
+        mPackageNameList.add("com.qiyi.video");
+        mPackageNameList.add("com.netease.vopen.tablet");
+    }
+    private void launchApp(int i)
+    {
+        // TODO Auto-generated method stub
+        Intent mainIntent = mContext
+                .getPackageManager()
+                .getLaunchIntentForPackage(mPackageNameList.get(i));
+        mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        mContext.startActivity(mainIntent);
+    }
+
 }

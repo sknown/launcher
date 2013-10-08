@@ -15,7 +15,7 @@ public class TabTopItemView extends FrameLayout
   private ImageView mChannelImage = null;
   private Context mContext = null;
   private ImageView mHighLightImage = null;
-  //private TextView mTopTitle = null;
+  private TextView mTopTitle = null;
 
   public TabTopItemView(Context paramContext)
   {
@@ -41,9 +41,10 @@ public class TabTopItemView extends FrameLayout
   private void init()
   {
     addView(((LayoutInflater)this.mContext.getSystemService("layout_inflater")).inflate(R.layout.view_tab_top_item, null));
-    this.mChannelImage = ((ImageView)findViewById(R.id.tab_top_item_image));
-    //this.mTopTitle = ((TextView)findViewById(R.id.tab_top_item_text));
-    this.mHighLightImage = ((ImageView)findViewById(R.id.tab_top_highlight_image));
+
+    mChannelImage = ((ImageView)findViewById(R.id.tab_top_item_image));
+    mTopTitle = ((TextView)findViewById(R.id.tab_top_item_text));
+    mHighLightImage = ((ImageView)findViewById(R.id.tab_top_highlight_image));
   }
 
   public void onImageButtonFocusChanged(boolean paramBoolean)
@@ -79,6 +80,11 @@ public class TabTopItemView extends FrameLayout
    // this.mTopTitle.setText(paramString);
     setTopTitleVisibility(true);
   }
+
+    public void setTopTitleText(int resId)
+    {
+        mTopTitle.setText(resId);
+    }
 
     public void setTopTitleVisibility(boolean paramBoolean)
     {

@@ -13,4 +13,10 @@
     <string name="education_online">网上课程</string>
     <string name="fun_time">轻松一刻</string>
     <string name="multi_screen">手机多屏</string>
+    <string name="sina_news">新浪新闻</string>
+    <string name="dou_guo_mei_shi">豆果美食</string>
+    <string name="jd">京东购物</string>
+    <string name="gu_piao">股票行情</string>
+    <string name="dang_dang">当当购物</string>
+    <string name="travel">旅游</string>
 </resources>

@@ -15,9 +15,23 @@
     <ImageView
         android:id="@+id/tab_top_highlight_image"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="30dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:scaleType="fitXY" />
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:background="#B2000000"/>
+
+    <TextView
+        android:id="@+id/tab_top_item_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="middle"
+        android:gravity="bottom"
+        android:paddingLeft="5.0dip"
+        android:singleLine="true"
+        android:background="@drawable/sel_album_text"
+        android:textSize="@dimen/main_page_recommend_item_text_size" />
 
 </RelativeLayout>

@@ -80,19 +80,25 @@ public class TabTop extends FrameLayout {
 
     public void initImage()
     {
-        this.mTopButton_01.setTopImageRes(R.drawable.tab_tops_hot_image );
-        this.mTopButton_02.setTopImageRes(R.drawable.tab_tops_image_1_temp);
-        this.mTopButton_03.setTopImageRes(R.drawable.tab_tops_image_2_temp);
-        this.mTopButton_04.setTopImageRes(R.drawable.tab_tops_haoping_image);
-        this.mTopButton_05.setTopImageRes(R.drawable.tab_tops_image_3_temp);
-        this.mTopButton_06.setTopImageRes(R.drawable.tab_tops_image_4_temp);
+        this.mTopButton_01.setTopImageRes(R.drawable.tab_top_meishi);
+        this.mTopButton_02.setTopImageRes(R.drawable.tab_top_sina);
+        this.mTopButton_03.setTopImageRes(R.drawable.tab_top_jd);
+        this.mTopButton_04.setTopImageRes(R.drawable.tab_top_gupiao);
+        this.mTopButton_05.setTopImageRes(R.drawable.tab_top_dangdang);
+        this.mTopButton_06.setTopImageRes(R.drawable.tab_top_travell);
 
-        this.mTopButton_01.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mTopButton_02.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mTopButton_03.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mTopButton_04.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mTopButton_05.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mTopButton_06.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
+//        this.mTopButton_01.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
+//        this.mTopButton_02.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
+//        this.mTopButton_03.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
+//        this.mTopButton_04.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
+//        this.mTopButton_05.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
+//        this.mTopButton_06.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
 
+        mTopButton_01.setTopTitleText(R.string.dou_guo_mei_shi);
+        mTopButton_02.setTopTitleText(R.string.sina_news);
+        mTopButton_03.setTopTitleText(R.string.jd);
+        mTopButton_04.setTopTitleText(R.string.gu_piao);
+        mTopButton_05.setTopTitleText(R.string.dang_dang);
+        mTopButton_06.setTopTitleText(R.string.travel);
     }
 }

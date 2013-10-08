@@ -1,6 +1,7 @@
 package com.wefeng.launcher;
 
 import android.app.Activity;
+import android.content.pm.PackageInfo;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -23,6 +24,7 @@ import com.wefeng.launcher.widget.TabWatchTv;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.TimerTask;
 
 public class MainActivity extends Activity {
@@ -37,6 +39,7 @@ public class MainActivity extends Activity {
     private RadioGroup mRadioGroup = null;
     private GetApk mApk = null;
     private HashMap<String, Drawable> mApkList = null;
+    private List<PackageInfo> mPackageList = null;
     private TabApk mTabApk = null;
 
     private TextView mTimeText = null;
@@ -72,13 +75,14 @@ public class MainActivity extends Activity {
 
         mApk = new GetApk(this, new GetApk.LoadApkFinishListen() {
             @Override
-            public void loadApkFinishListen(HashMap<String, Drawable> apk) {
-                mApkList = apk;
+            public void loadApkFinishListen(HashMap<String, Drawable> apkList, List<PackageInfo> packageList) {
+                mApkList = apkList;
+                mPackageList = packageList;
 
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        mTabApk.setApk(mApkList);
+                        mTabApk.setApk(mApkList, mPackageList);
                     }
                 });
             }

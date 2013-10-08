@@ -1,6 +1,7 @@
 package com.wefeng.launcher.widget;
 
 import android.content.Context;
+import android.content.pm.PackageInfo;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import com.wefeng.launcher.R;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * Created by Administrator on 13-9-26.
@@ -145,20 +147,21 @@ public class TabApk extends FrameLayout {
         this.mImageButton_12.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
     }
 
-    public void setApk(HashMap<String,Drawable> apk)
+    public void setApk(HashMap<String,Drawable> apkList, List<PackageInfo> packageList)
     {
         int BUTTON_COUNT = 11;
         int i = BUTTON_COUNT-1;
 
-        Iterator iterator = apk.keySet().iterator();
+        Iterator iterator = apkList.keySet().iterator();
         while(iterator.hasNext() && i>=0)
         {
             String label = (String)iterator.next();
-            Drawable icon = apk.get(label);
+            Drawable icon = apkList.get(label);
 
             TabApkItemView view = mApkButton.get(i);
             view.setApkImage(icon);
             view.setTitle(label);
+            view.setTag(packageList.get(i));
             i--;
         }
     }

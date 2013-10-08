@@ -1,6 +1,7 @@
 package com.wefeng.launcher.util;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -43,13 +44,13 @@ public class GetApk {
                 mApkHash.put(label, icon);
             }
 
-            mListen.loadApkFinishListen(mApkHash);
+            mListen.loadApkFinishListen(mApkHash, mApkList);
         }
     };
 
     public interface LoadApkFinishListen
     {
-        void loadApkFinishListen(HashMap<String, Drawable> apk);
+        void loadApkFinishListen(HashMap<String, Drawable> apkList, List<PackageInfo> packageList);
     }
 
     private LoadApkFinishListen mListen = null;
@@ -94,5 +95,18 @@ public class GetApk {
     public Drawable getApkIcon(PackageInfo apk)
     {
         return mManager.getApplicationIcon(apk.applicationInfo);
+    }
+
+    public void runApk(PackageInfo apk)
+    {
+        Intent mainIntent = mContext
+                .getPackageManager()
+                .getLaunchIntentForPackage(apk.packageName);
+
+        assert mainIntent != null;
+
+        mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+        mContext.startActivity(mainIntent);
     }
 }

@@ -3,15 +3,17 @@ package com.wefeng.launcher.widget;
 import com.wefeng.launcher.R;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class TabApkItemView extends FrameLayout
-{
+public class TabApkItemView extends FrameLayout implements View.OnClickListener {
     private ImageView mApkImage = null;
     private Context mContext = null;
     private ImageView mHighLightImage = null;
@@ -44,6 +46,8 @@ public class TabApkItemView extends FrameLayout
         this.mApkImage = ((ImageView)findViewById(R.id.tab_channel_item_image));
         this.mHighLightImage = ((ImageView)findViewById(R.id.tab_channel_highlight_image));
         mTitle = (TextView)findViewById(R.id.tab_apk_item_text);
+
+        setOnClickListener(this);
     }
 
     public void onImageButtonFocusChanged(boolean paramBoolean)
@@ -81,5 +85,18 @@ public class TabApkItemView extends FrameLayout
     public void setTitle(String title)
     {
         mTitle.setText(title);
+    }
+
+    @Override
+    public void onClick(View v) {
+        PackageInfo info = (PackageInfo)v.getTag();
+
+        Intent mainIntent = mContext.getPackageManager().getLaunchIntentForPackage(info.packageName);
+
+        assert mainIntent != null;
+
+        mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+        mContext.startActivity(mainIntent);
     }
 }

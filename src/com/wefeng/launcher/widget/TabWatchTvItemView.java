@@ -38,25 +38,32 @@ public class TabWatchTvItemView extends FrameLayout
     init();
   }
 
-  private void init()
-  {
-    addView(((LayoutInflater)this.mContext.getSystemService("layout_inflater")).inflate(R.layout.view_tab_watchtv_item, null));
-    this.mChannelImage = ((ImageView)findViewById(R.id.tab_recommend_item_image));
-    this.mWatchTvTitle = ((TextView)findViewById(R.id.tab_recommend_item_text));
-    this.mHighLightImage = ((ImageView)findViewById(R.id.tab_recommend_highlight_image));
-  }
-
-  public void onImageButtonFocusChanged(boolean paramBoolean)
-  {
-    if (paramBoolean)
+    private void init()
     {
-      this.mWatchTvTitle.setTextColor(this.mContext.getResources().getColor(R.color.album_text_focus));
-      this.mHighLightImage.setVisibility(0);
-      return;
+        addView(((LayoutInflater)this.mContext.getSystemService("layout_inflater")).inflate(R.layout.view_tab_watchtv_item, null));
+        this.mChannelImage = ((ImageView)findViewById(R.id.tab_recommend_item_image));
+        this.mWatchTvTitle = ((TextView)findViewById(R.id.tab_recommend_item_text));
+        this.mHighLightImage = ((ImageView)findViewById(R.id.tab_recommend_highlight_image));
+
+        mWatchTvTitle.setTextColor(this.mContext.getResources().getColor(R.color.album_text_normal));
+
     }
-    this.mWatchTvTitle.setTextColor(this.mContext.getResources().getColor(R.color.album_text_normal));
-    this.mHighLightImage.setVisibility(4);
-  }
+
+    public void onImageButtonFocusChanged(boolean paramBoolean)
+    {
+        if (paramBoolean)
+        {
+            mWatchTvTitle.setTextColor(this.mContext.getResources().getColor(R.color.album_text_focus));
+            mWatchTvTitle.setSelected(true);
+            this.mHighLightImage.setVisibility(0);
+            return;
+        }
+
+        mWatchTvTitle.setTextColor(this.mContext.getResources().getColor(R.color.album_text_normal));
+        mWatchTvTitle.setSelected(false);
+
+        this.mHighLightImage.setVisibility(4);
+    }
 
   public void setHighLightImageRes(int paramInt)
   {

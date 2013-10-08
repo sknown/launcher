@@ -26,11 +26,13 @@ public class TabTop extends FrameLayout {
 
     private OnFocusChangeListener mFocusListener = new OnFocusChangeListener()
     {
-        public void onFocusChange(View paramAnonymousView, boolean paramAnonymousBoolean)
+        public void onFocusChange(View view, boolean isFocus)
         {
-            if (paramAnonymousBoolean)
+            ((TabTopItemView)view).onImageButtonFocusChanged(isFocus);
+
+            if (isFocus)
             {
-                paramAnonymousView.bringToFront();
+                view.bringToFront();
                 TabTop.this.mContainer.invalidate();
             }
         }

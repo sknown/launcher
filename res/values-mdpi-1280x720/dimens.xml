@@ -10,7 +10,7 @@
     <dimen name="search_button_marginright">70.0dip</dimen>
     <dimen name="search_button_marginTop">65.0dip</dimen>
     <dimen name="homepage_viewpager_layout_marginTop">100.0dip</dimen>
-    <dimen name="bottom_pannel_marginBottom">40.0dip</dimen>
+    <dimen name="bottom_pannel_marginBottom">70.0dip</dimen>
     <dimen name="bottom_pannel_paddingLeft">270.0dip</dimen>
     <dimen name="bottom_pannel_paddingRight">270.0dip</dimen>
     <dimen name="tab_text_width">184.0dip</dimen>

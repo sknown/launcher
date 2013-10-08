@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal" >
 
-        <com.wefeng.launcher.widget.TabChannelsItemView
+        <com.wefeng.launcher.widget.TabApkItemView
             android:id="@+id/tab_channel_button_1"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -22,7 +22,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabChannelsItemView
+        <com.wefeng.launcher.widget.TabApkItemView
             android:id="@+id/tab_channel_button_2"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -32,7 +32,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabChannelsItemView
+        <com.wefeng.launcher.widget.TabApkItemView
             android:id="@+id/tab_channel_button_3"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -42,7 +42,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabChannelsItemView
+        <com.wefeng.launcher.widget.TabApkItemView
             android:id="@+id/tab_channel_button_4"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -53,7 +53,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabChannelsItemView
+        <com.wefeng.launcher.widget.TabApkItemView
             android:id="@+id/tab_channel_button_5"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -63,7 +63,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabChannelsItemView
+        <com.wefeng.launcher.widget.TabApkItemView
             android:id="@+id/tab_channel_button_6"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -74,7 +74,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabChannelsItemView
+        <com.wefeng.launcher.widget.TabApkItemView
             android:id="@+id/tab_channel_button_7"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -84,7 +84,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabChannelsItemView
+        <com.wefeng.launcher.widget.TabApkItemView
             android:id="@+id/tab_channel_button_8"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -95,7 +95,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabChannelsItemView
+        <com.wefeng.launcher.widget.TabApkItemView
             android:id="@+id/tab_channel_button_9"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -105,7 +105,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabChannelsItemView
+        <com.wefeng.launcher.widget.TabApkItemView
             android:id="@+id/tab_channel_button_10"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -116,7 +116,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabChannelsItemView
+        <com.wefeng.launcher.widget.TabApkItemView
             android:id="@+id/tab_channel_button_11"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
@@ -126,7 +126,7 @@
             android:background="@drawable/image_button_bg"
             android:focusable="true" />
 
-        <com.wefeng.launcher.widget.TabChannelsItemView
+        <com.wefeng.launcher.widget.TabApkItemView
             android:id="@+id/tab_channel_button_12"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"

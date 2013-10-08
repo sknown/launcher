@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main_page_container"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_wallpaper_3">
 
     <ImageView
         android:id="@+id/qiyilogo_id"
@@ -135,7 +136,8 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="@dimen/phone_image_tip_marginBottom"
         android:layout_marginRight="@dimen/phone_image_tip_marginRight"
-        android:src="@drawable/main_page_image_phone_connect_tip" />
+        android:src="@drawable/main_page_image_phone_connect_tip"
+        android:visibility="visible" />
 
     <com.wefeng.launcher.widget.ProgressBar
         android:id="@+id/update_data_progress"

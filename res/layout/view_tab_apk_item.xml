@@ -10,7 +10,12 @@
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:scaleType="fitXY" />
+        android:paddingLeft="30dp"
+        android:scaleType="fitXY"
+        android:cropToPadding="false"
+        android:paddingTop="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="30dp" />
 
     <ImageView
         android:id="@+id/tab_channel_highlight_image"
@@ -20,4 +25,16 @@
         android:layout_alignParentTop="true"
         android:scaleType="fitXY" />
 
+    <TextView
+        android:id="@+id/tab_apk_item_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="middle"
+        android:gravity="bottom"
+        android:paddingLeft="5.0dip"
+        android:singleLine="true"
+        android:background="@drawable/sel_album_text"
+        android:textSize="@dimen/main_page_recommend_item_text_size" />
 </RelativeLayout>

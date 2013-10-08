@@ -1,27 +1,29 @@
 package com.wefeng.launcher;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import android.os.Bundle;
 import android.app.Activity;
-import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.wefeng.launcher.widget.TabWatchTv;
-import com.wefeng.launcher.widget.TabChannels;
+import com.wefeng.launcher.util.GetApk;
+import com.wefeng.launcher.util.GetSystem;
+import com.wefeng.launcher.widget.TabApk;
 import com.wefeng.launcher.widget.TabTop;
+import com.wefeng.launcher.widget.TabWatchTv;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.TimerTask;
 
 public class MainActivity extends Activity {
 
@@ -33,6 +35,21 @@ public class MainActivity extends Activity {
     private RadioButton mRadioTitle3;
     private RadioButton mRadioTitle4;
     private RadioGroup mRadioGroup = null;
+    private GetApk mApk = null;
+    private HashMap<String, Drawable> mApkList = null;
+    private TabApk mTabApk = null;
+
+    private TextView mTimeText = null;
+    private int TIME_REFRESH_TIME = 1000;
+    private Handler mHandler = new Handler();
+    private Runnable mRefreshTime = new Runnable() {
+        @Override
+        public void run() {
+            mTimeText.setText(GetSystem.getTime());
+            mHandler.removeCallbacks(this);
+            mHandler.postDelayed(this, TIME_REFRESH_TIME);
+        }
+    };
 
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -44,17 +61,43 @@ public class MainActivity extends Activity {
 		
 		mViewPager.requestFocus();
         mRadioTitle1.setChecked(true);
+
+        ImageView phoneImage = (ImageView)findViewById(R.id.main_page_phone_image);
+        phoneImage.setVisibility(View.INVISIBLE);
+
+        ImageView phoneImageTip = (ImageView)findViewById(R.id.main_page_phone_image_tip);
+        phoneImageTip.setVisibility(View.INVISIBLE);
+
+        mTimeText = (TextView)findViewById(R.id.main_page_time_text);
+
+        mApk = new GetApk(this, new GetApk.LoadApkFinishListen() {
+            @Override
+            public void loadApkFinishListen(HashMap<String, Drawable> apk) {
+                mApkList = apk;
+
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        mTabApk.setApk(mApkList);
+                    }
+                });
+            }
+        });
+
+        mHandler.postDelayed(mRefreshTime, TIME_REFRESH_TIME);
 	}
 
 	public void addPage()
 	{
 		LayoutInflater lf = getLayoutInflater().from(this);
 		
-		TabWatchTv view1 = (TabWatchTv)new TabWatchTv(this);
-        TabTop view2 = (TabTop)new TabTop(this);
+		TabWatchTv view1 = new TabWatchTv(this);
+        TabTop view2 = new TabTop(this);
+        TabApk view3 = new TabApk(this);
 
-        TabChannels view3 = new TabChannels(this);
 		View view4 = lf.inflate(R.layout.view_tab_settings, null);
+
+        mTabApk = view3;
 
         view1.initImage();
         view2.initImage();

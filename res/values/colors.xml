@@ -24,8 +24,10 @@
     <color name="album_title_text_color">#ff999999</color>
     <color name="album_des_text_color">#ff999999</color>
     <color name="Gray">#ff999999</color>
-    <color name="album_text_normal">#ff6f6f6f</color>
-    <color name="album_text_focus">#ffffffff</color>
+    <color name="album_text_normal_sel">#8c6f6f6f</color>
+    <color name="album_text_focus_sel">#bc6f6f6f</color>
+    <color name="album_text_normal">#ffbfbfbf</color>
+    <color name="album_text_focus">#ffffff</color>
     <color name="bg_album_horizontal_item_image">#5f3f3f3f</color>
     <color name="video_play_text_color">#ff999999</color>
     <color name="defination_button_color">#fff1f1f1</color>

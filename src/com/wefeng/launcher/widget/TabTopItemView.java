@@ -45,17 +45,21 @@ public class TabTopItemView extends FrameLayout
     mChannelImage = ((ImageView)findViewById(R.id.tab_top_item_image));
     mTopTitle = ((TextView)findViewById(R.id.tab_top_item_text));
     mHighLightImage = ((ImageView)findViewById(R.id.tab_top_highlight_image));
+
+    mTopTitle.setTextColor(this.mContext.getResources().getColor(R.color.album_text_normal));
+
   }
 
   public void onImageButtonFocusChanged(boolean paramBoolean)
   {
     if (paramBoolean)
     {
-      //this.mTopTitle.setTextColor(this.mContext.getResources().getColor(R.color.album_text_focus));
+      this.mTopTitle.setTextColor(this.mContext.getResources().getColor(R.color.album_text_focus));
       this.mHighLightImage.setVisibility(0);
       return;
     }
-    //this.mTopTitle.setTextColor(this.mContext.getResources().getColor(R.color.album_text_normal));
+
+    this.mTopTitle.setTextColor(this.mContext.getResources().getColor(R.color.album_text_normal));
     this.mHighLightImage.setVisibility(4);
   }
 

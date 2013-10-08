@@ -10,21 +10,8 @@
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:scaleType="fitXY" />
-
-    <TextView
-        android:id="@+id/tab_recommend_item_text"
-        android:layout_width="fill_parent"
-        android:layout_height="180.0dip"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:background="@drawable/tab_recommend_item_bg"
-        android:ellipsize="middle"
-        android:gravity="bottom"
-        android:paddingLeft="5.0dip"
-        android:singleLine="true"
-        android:textColor="@color/album_text_normal"
-        android:textSize="@dimen/main_page_recommend_item_text_size" />
+        android:scaleType="fitXY"
+        android:background="@drawable/tab_app_0000_fun_time" />
 
     <ImageView
         android:id="@+id/tab_recommend_highlight_image"
@@ -32,7 +19,19 @@
         android:layout_height="30dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:scaleType="fitXY"
-        android:background="#B2000000"/>
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tab_recommend_item_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="middle"
+        android:gravity="bottom"
+        android:paddingLeft="5.0dip"
+        android:singleLine="true"
+        android:background="@drawable/sel_album_text"
+        android:textSize="@dimen/main_page_recommend_item_text_size" />
 
 </RelativeLayout>

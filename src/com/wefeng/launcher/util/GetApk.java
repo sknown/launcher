@@ -107,4 +107,23 @@ public class GetApk {
 
         mContext.startActivity(mainIntent);
     }
+
+
+    public static void startNewApp(Context context, String packageName)
+    {
+        Intent mainIntent = context
+                .getPackageManager()
+                .getLaunchIntentForPackage(packageName);
+        mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(mainIntent);
+    }
+
+    public static void startNewApp(Context context, PackageInfo apk)
+    {
+        Intent mainIntent = context
+                .getPackageManager()
+                .getLaunchIntentForPackage(apk.packageName);
+        mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(mainIntent);
+    }
 }

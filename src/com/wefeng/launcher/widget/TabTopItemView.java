@@ -1,23 +1,28 @@
 package com.wefeng.launcher.widget;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.graphics.Bitmap;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.wefeng.launcher.R;
+import com.wefeng.launcher.util.GetApk;
 
 public class TabTopItemView extends FrameLayout
 {
-  private ImageView mChannelImage = null;
-  private Context mContext = null;
-  private ImageView mHighLightImage = null;
-  private TextView mTopTitle = null;
+    private ImageView mChannelImage = null;
+    private Context mContext = null;
+    private ImageView mHighLightImage = null;
+    private TextView mTopTitle = null;
+    private String mPackageName;
 
-  public TabTopItemView(Context paramContext)
+    public TabTopItemView(Context paramContext)
   {
     super(paramContext);
     this.mContext = paramContext;
@@ -48,7 +53,18 @@ public class TabTopItemView extends FrameLayout
 
     mTopTitle.setTextColor(this.mContext.getResources().getColor(R.color.album_text_normal));
 
+    setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+          GetApk.startNewApp(mContext, mPackageName);
+      }
+    });
   }
+
+    public void setApkPackageName(String packageName)
+    {
+        mPackageName = packageName;
+    }
 
   public void onImageButtonFocusChanged(boolean paramBoolean)
   {
@@ -99,4 +115,5 @@ public class TabTopItemView extends FrameLayout
         }
         //this.mTopTitle.setVisibility(4);
     }
+
 }

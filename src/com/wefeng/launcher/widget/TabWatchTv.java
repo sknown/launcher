@@ -62,7 +62,6 @@ public class TabWatchTv extends FrameLayout {
         super(paramContext, paramAttributeSet, paramInt);
         this.mContext = paramContext;
         init();
-        initApp();
     }
 
     private void init()
@@ -89,6 +88,16 @@ public class TabWatchTv extends FrameLayout {
 
         mAppButton_01.setOnClickListener(new MyOnClock(1));
         mAppButton_02.setOnClickListener(new MyOnClock(2));
+        mAppButton_03.setOnClickListener(new MyOnClock(3));
+        mAppButton_04.setOnClickListener(new MyOnClock(4));
+        mAppButton_05.setOnClickListener(new MyOnClock(5));
+        mAppButton_06.setOnClickListener(new MyOnClock(6));
+        mAppButton_07.setOnClickListener(new MyOnClock(7));
+
+
+
+        initApp();
+
 
     }
 
@@ -117,7 +126,7 @@ public class TabWatchTv extends FrameLayout {
         this.mAppButton_07.setWatchTvImageRes(R.drawable.tab_watchtv_class);
 
         mAppButton_01.setWatchTvTitleText(R.string.fun_time);
-        mAppButton_02.setWatchTvTitleText(R.string.multi_screen);
+        mAppButton_02.setWatchTvTitleText(R.string.app_store);
         mAppButton_03.setWatchTvTitleText(R.string.watch_tv);
         mAppButton_04.setWatchTvTitleText(R.string.ifeng_new);
         mAppButton_05.setWatchTvTitleText(R.string.cartoon);
@@ -131,7 +140,7 @@ public class TabWatchTv extends FrameLayout {
     {
         mPackageNameList.add("com.polarbit.ragingthunder");
         mPackageNameList.add("com.dami.store");
-        mPackageNameList.add("com.togic.livevideo");
+        mPackageNameList.add("com.moons.onlinetv");
         mPackageNameList.add("com.ifeng.easyVideo");
         mPackageNameList.add("com.ikantv.activity");
         mPackageNameList.add("com.qiyi.video");
@@ -139,10 +148,9 @@ public class TabWatchTv extends FrameLayout {
     }
     private void launchApp(int i)
     {
-        // TODO Auto-generated method stub
         Intent mainIntent = mContext
                 .getPackageManager()
-                .getLaunchIntentForPackage(mPackageNameList.get(i));
+                .getLaunchIntentForPackage(mPackageNameList.get(i-1));
         mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         mContext.startActivity(mainIntent);
     }

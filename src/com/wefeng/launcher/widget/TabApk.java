@@ -2,6 +2,8 @@ package com.wefeng.launcher.widget;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -11,6 +13,7 @@ import android.widget.RelativeLayout;
 
 import com.wefeng.launcher.R;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -116,44 +119,39 @@ public class TabApk extends FrameLayout {
         mImageButton_11.setOnFocusChangeListener(this.mFocusListener);
         mImageButton_12.setOnFocusChangeListener(this.mFocusListener);
 
+        TabApkItemView moreApp =mImageButton_12;
+
+        moreApp.setApkImage(getResources().getDrawable(R.drawable.tab_apk_more_icon));
+        moreApp.setTitle(R.string.more_app);
+        moreApp.setTag("com.unionman.androidappmanager");
 
     }
 
+    private final int BUTTON_COUNT = 12;
+
     public void initImage()
     {
-        this.mImageButton_01.setBackgroud(R.drawable.tab_channel_image_variety );
-        this.mImageButton_02.setBackgroud(R.drawable.tab_channel_image_sports);
-        this.mImageButton_03.setBackgroud(R.drawable.tab_channel_image_documentaryfilm);
-        this.mImageButton_04.setBackgroud(R.drawable.tab_channel_image_education);
-        this.mImageButton_05.setBackgroud(R.drawable.tab_channel_image_entertainment);
-        this.mImageButton_06.setBackgroud(R.drawable.tab_channel_image_episode);
-        this.mImageButton_07.setBackgroud(R.drawable.tab_channel_image_fashion);
-        this.mImageButton_08.setBackgroud(R.drawable.tab_channel_image_flower);
-        this.mImageButton_09.setBackgroud(R.drawable.tab_channel_image_micro_movie);
-        this.mImageButton_10.setBackgroud(R.drawable.tab_channel_image_movie);
-        this.mImageButton_11.setBackgroud(R.drawable.tab_channel_image_music);
+        this.mImageButton_01.setBackgroud(R.drawable.tab_channel_image_qiyi );
+        this.mImageButton_02.setBackgroud(R.drawable.tab_channel_image_qiyi);
+        this.mImageButton_03.setBackgroud(R.drawable.tab_channel_image_qiyi);
+        this.mImageButton_04.setBackgroud(R.drawable.tab_channel_image_qiyi);
+        this.mImageButton_05.setBackgroud(R.drawable.tab_channel_image_qiyi);
+        this.mImageButton_06.setBackgroud(R.drawable.tab_channel_image_qiyi);
+        this.mImageButton_07.setBackgroud(R.drawable.tab_channel_image_qiyi);
+        this.mImageButton_08.setBackgroud(R.drawable.tab_channel_image_qiyi);
+        this.mImageButton_09.setBackgroud(R.drawable.tab_channel_image_qiyi);
+        this.mImageButton_10.setBackgroud(R.drawable.tab_channel_image_qiyi);
+        this.mImageButton_11.setBackgroud(R.drawable.tab_channel_image_qiyi);
         this.mImageButton_12.setBackgroud(R.drawable.tab_channel_image_qiyi);
-        this.mImageButton_01.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mImageButton_02.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mImageButton_03.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mImageButton_04.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mImageButton_05.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mImageButton_06.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mImageButton_07.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mImageButton_08.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mImageButton_09.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mImageButton_10.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mImageButton_11.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
-        this.mImageButton_12.setHighLightImageRes(R.drawable.tab_recommend_highlight_270_270);
+
     }
 
     public void setApk(HashMap<String,Drawable> apkList, List<PackageInfo> packageList)
     {
-        int BUTTON_COUNT = 11;
-        int i = BUTTON_COUNT-1;
+        int i = BUTTON_COUNT-2;
 
         Iterator iterator = apkList.keySet().iterator();
-        while(iterator.hasNext() && i>=0)
+        while(iterator.hasNext() && i>=0 && i<packageList.size())
         {
             String label = (String)iterator.next();
             Drawable icon = apkList.get(label);
@@ -161,7 +159,7 @@ public class TabApk extends FrameLayout {
             TabApkItemView view = mApkButton.get(i);
             view.setApkImage(icon);
             view.setTitle(label);
-            view.setTag(packageList.get(i));
+            view.setTag(packageList.get(i).packageName);
             i--;
         }
     }

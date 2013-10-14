@@ -3,7 +3,7 @@
     android:id="@+id/main_page_container"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bg_wallpaper_3">
+    android:background="@drawable/bg_wallpaper_14">
 
     <ImageView
         android:id="@+id/qiyilogo_id"
@@ -57,6 +57,10 @@
             android:text="@string/watch_tv"
             android:textSize="30dp"
             android:background="@drawable/sel_zone_title_btn"
+            android:shadowColor="#40000000"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="2"
             android:gravity="center_vertical|center_horizontal"
             android:button="@null" />
 
@@ -69,6 +73,10 @@
             android:background="@drawable/sel_zone_title_btn"
             android:text="@string/popular"
             android:textSize="30dp"
+            android:shadowColor="#40000000"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="2"
             android:gravity="center_vertical|center_horizontal"
             android:button="@null" />
 
@@ -82,6 +90,10 @@
             android:text="@string/application"
             android:textSize="30dp"
             android:gravity="center_vertical|center_horizontal"
+            android:shadowColor="#40000000"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="2"
             android:button="@null" />
 
         <RadioButton
@@ -94,6 +106,10 @@
             android:gravity="center_vertical|center_horizontal"
             android:text="@string/settings"
             android:textSize="30dp"
+            android:shadowColor="#40000000"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="2"
             android:button="@null" />
 
 
@@ -126,6 +142,7 @@
             android:text="19:20"
             android:textColor="#ff999999"
             android:textSize="30.0sp" />
+
     </LinearLayout>
 
     <ImageView

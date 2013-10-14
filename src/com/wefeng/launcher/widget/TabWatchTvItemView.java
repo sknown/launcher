@@ -1,23 +1,26 @@
 package com.wefeng.launcher.widget;
 
 import com.wefeng.launcher.R;
+import com.wefeng.launcher.util.GetApk;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class TabWatchTvItemView extends FrameLayout
 {
-  private ImageView mChannelImage = null;
-  private Context mContext = null;
-  private ImageView mHighLightImage = null;
-  private TextView mWatchTvTitle = null;
+    private ImageView mChannelImage = null;
+    private Context mContext = null;
+    private ImageView mHighLightImage = null;
+    private TextView mWatchTvTitle = null;
+    private String mPackageName;
 
-  public TabWatchTvItemView(Context paramContext)
+    public TabWatchTvItemView(Context paramContext)
   {
     super(paramContext);
     this.mContext = paramContext;
@@ -102,4 +105,5 @@ public class TabWatchTvItemView extends FrameLayout
     }
     this.mWatchTvTitle.setVisibility(4);
   }
+
 }

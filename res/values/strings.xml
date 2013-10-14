@@ -19,4 +19,10 @@
     <string name="gu_piao">股票行情</string>
     <string name="dang_dang">当当购物</string>
     <string name="travel">旅游</string>
+    <string name="app_store">应用商店</string>
+    <string name="network_setup">网络设置</string>
+    <string name="auto_set_wired_network_ip">自动获取有线网络IP</string>
+    <string name="wireless_network_setup">无线网络设置</string>
+    <string name="manual_set_wired_network_ip">手动设置有线网络IP</string>
+    <string name="more_app">更多应用</string>
 </resources>

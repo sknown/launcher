@@ -87,11 +87,15 @@ public class TabApkItemView extends FrameLayout implements View.OnClickListener 
         mTitle.setText(title);
     }
 
+    public void setTitle(int resId)
+    {
+        mTitle.setText(resId);
+    }
     @Override
     public void onClick(View v) {
-        PackageInfo info = (PackageInfo)v.getTag();
+        String packageName = (String)v.getTag();
 
-        Intent mainIntent = mContext.getPackageManager().getLaunchIntentForPackage(info.packageName);
+        Intent mainIntent = mContext.getPackageManager().getLaunchIntentForPackage(packageName);
 
         assert mainIntent != null;
 

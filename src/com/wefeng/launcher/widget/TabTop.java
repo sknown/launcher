@@ -102,5 +102,12 @@ public class TabTop extends FrameLayout {
         mTopButton_04.setTopTitleText(R.string.gu_piao);
         mTopButton_05.setTopTitleText(R.string.dang_dang);
         mTopButton_06.setTopTitleText(R.string.travel);
+
+        mTopButton_01.setApkPackageName("com.douguo.recipetv");
+        mTopButton_02.setApkPackageName("com.sina.pad.newz");
+        mTopButton_03.setApkPackageName("com.jingdong.app.tv");
+        mTopButton_04.setApkPackageName("com.android.dazhihui");
+        mTopButton_05.setApkPackageName("com.dangdang.tv");
+        mTopButton_06.setApkPackageName("com.coocaa.ahzk.sjly");
     }
 }

@@ -28,7 +28,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/tab_settings_shopping_button"
+            android:id="@+id/tab_settings_network_button"
             android:layout_width="@dimen/main_page_long_edge_length"
             android:layout_height="@dimen/main_page_long_edge_length"
             android:layout_alignParentTop="true"
@@ -40,73 +40,73 @@
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:src="@drawable/tab_settings_shopping_image" />
+                android:src="@drawable/tab_settings_network_image" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/tab_settings_favor_button"
+            android:id="@+id/tab_settings_dlna_button"
             android:layout_width="@dimen/main_page_long_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="@dimen/main_page_shading_offset"
-            android:layout_toRightOf="@id/tab_settings_shopping_button"
+            android:layout_toRightOf="@id/tab_settings_network_button"
             android:background="@drawable/image_button_bg"
             android:focusable="true" >
 
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:src="@drawable/tab_settings_favor_image" />
+                android:src="@drawable/tab_settings_dlna_image" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/tab_settings_history_button"
+            android:id="@+id/tab_settings_multiscreen_button"
             android:layout_width="@dimen/main_page_long_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
-            android:layout_below="@id/tab_settings_favor_button"
+            android:layout_below="@id/tab_settings_dlna_button"
             android:layout_marginLeft="@dimen/main_page_shading_offset"
             android:layout_marginTop="@dimen/main_page_shading_offset"
-            android:layout_toRightOf="@id/tab_settings_shopping_button"
+            android:layout_toRightOf="@id/tab_settings_network_button"
             android:background="@drawable/image_button_bg"
             android:focusable="true" >
 
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:src="@drawable/tab_settings_history_image" />
+                android:src="@drawable/tab_settings_multiscreen_image" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/tab_settings_system_settings_button"
+            android:id="@+id/tab_settings_system_help_button"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="@dimen/main_page_shading_offset"
-            android:layout_toRightOf="@id/tab_settings_favor_button"
+            android:layout_toRightOf="@id/tab_settings_dlna_button"
             android:background="@drawable/image_button_bg"
             android:focusable="true" >
 
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:src="@drawable/tab_settings_system_settings_image" />
+                android:src="@drawable/tab_settings_system_help_image" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/tab_settings_help_button"
+            android:id="@+id/tab_settings_more_button"
             android:layout_width="@dimen/main_page_short_edge_length"
             android:layout_height="@dimen/main_page_short_edge_length"
-            android:layout_below="@id/tab_settings_system_settings_button"
+            android:layout_below="@id/tab_settings_system_help_button"
             android:layout_marginLeft="@dimen/main_page_shading_offset"
             android:layout_marginTop="@dimen/main_page_shading_offset"
-            android:layout_toRightOf="@id/tab_settings_history_button"
+            android:layout_toRightOf="@id/tab_settings_multiscreen_button"
             android:background="@drawable/image_button_bg"
             android:focusable="true" >
 
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:src="@drawable/tab_settings_help_image" />
+                android:src="@drawable/tab_settings_more_image" />
         </LinearLayout>
     </com.wefeng.launcher.widget.CustomDrawingOrderLayout>
 

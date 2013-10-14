@@ -10,12 +10,12 @@
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:paddingLeft="30dp"
         android:scaleType="fitXY"
         android:cropToPadding="false"
-        android:paddingTop="30dp"
-        android:paddingRight="30dp"
-        android:paddingBottom="30dp" />
+        android:paddingTop="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="50dp" />
 
     <ImageView
         android:id="@+id/tab_channel_highlight_image"

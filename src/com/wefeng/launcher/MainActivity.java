@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.wefeng.launcher.util.GetApk;
 import com.wefeng.launcher.util.GetSystem;
 import com.wefeng.launcher.widget.TabApk;
+import com.wefeng.launcher.widget.TabSettings;
 import com.wefeng.launcher.widget.TabTop;
 import com.wefeng.launcher.widget.TabWatchTv;
 
@@ -99,7 +100,8 @@ public class MainActivity extends Activity {
         TabTop view2 = new TabTop(this);
         TabApk view3 = new TabApk(this);
 
-		View view4 = lf.inflate(R.layout.view_tab_settings, null);
+		//View view4 = lf.inflate(R.layout.view_tab_settings, null);
+        TabSettings view4 = new TabSettings(this);
 
         mTabApk = view3;
 
@@ -170,15 +172,19 @@ public class MainActivity extends Activity {
         
         //mRadioTitle1.setOnClickListener(new MyOnClickListener(0));
         mRadioTitle1.setOnFocusChangeListener(new RadioFocusChangeListener(0));
+        mRadioTitle1.setTextColor(getResources().getColor(R.color.white));
 
         //mRadioTitle2.setOnClickListener(new MyOnClickListener(1));
         mRadioTitle2.setOnFocusChangeListener(new RadioFocusChangeListener(1));
+        mRadioTitle2.setTextColor(getResources().getColor(R.color.white));
 
         //mRadioTitle3.setOnClickListener(new MyOnClickListener(2));
         mRadioTitle3.setOnFocusChangeListener(new RadioFocusChangeListener(2));
+        mRadioTitle3.setTextColor(getResources().getColor(R.color.white));
 
         //mRadioTitle4.setOnClickListener(new MyOnClickListener(3));
         mRadioTitle4.setOnFocusChangeListener(new RadioFocusChangeListener(3));
+        mRadioTitle4.setTextColor(getResources().getColor(R.color.white));
 
         mRadioGroup = (RadioGroup)findViewById(R.id.main_page_bottom_pannel);
         
@@ -199,9 +205,18 @@ public class MainActivity extends Activity {
             {
                 if(!rb.isChecked())
                 {
+                    rb.setTextColor(getResources().getColor(R.color.black));
                     rb.setChecked(true);
                     selectPage(mIndex);
                 }
+                else
+                {
+                    rb.setTextColor(getResources().getColor(R.color.black));
+                }
+            }
+            else
+            {
+                rb.setTextColor(getResources().getColor(R.color.white));
             }
         }
     }

@@ -40,4 +40,7 @@
     <color name="video_name_color">#fff1f1f1</color>
     <color name="album_list_default_text_color">#ff999999</color>
     <color name="album_list_highlight_text_color">#fff1f1f1</color>
+    <color name="right_dialog_bg">#90000000</color>
+    <color name="network_setup_item_text_normal">#ffffff</color>
+    <color name="network_setup_item_text_hl">#000000</color>
 </resources>

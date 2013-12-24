@@ -138,9 +138,9 @@ public class TabWatchTv extends FrameLayout {
 
     private void initApp()
     {
-        mPackageNameList.add("com.polarbit.ragingthunder");
+        mPackageNameList.add("com.rainbow.FMaj");
         mPackageNameList.add("com.dami.store");
-        mPackageNameList.add("com.moons.onlinetv");
+        mPackageNameList.add("com.togic.livevideo");
         mPackageNameList.add("com.ifeng.easyVideo");
         mPackageNameList.add("com.ikantv.activity");
         mPackageNameList.add("com.qiyi.video");

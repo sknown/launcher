@@ -103,6 +103,24 @@ public class TabSettings extends FrameLayout {
                 GetApk.startNewApp(mContext, "com.hisilicon.dlna.settings");
             }
         });
+        mTopButtonUpdate.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GetApk.startNewApp(mContext, "com.um.networkupgrad");
+            }
+        });
+        mTopButtonMultiscreen.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GetApk.startNewApp(mContext, "com.unionman.zxingcode");
+            }
+        });
+        mTopButtonHelp.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GetApk.startNewApp(mContext, "com.AppHellp.apphellp");
+            }
+        });
 
         mTopButtonNetwork.setOnClickListener(new OnClickListener()
         {
@@ -113,24 +131,7 @@ public class TabSettings extends FrameLayout {
                 mNetworkdialog = new NetworkDialog(mContext);
 
                 mNetworkdialog.show();
-//                    NetworkDialog.Builder builder = new NetworkDialog.Builder(mContext);
-//                    builder.setMessage("这个就是自定义的提示框");
-//                    builder.setTitle("提示");
-//                    builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            dialog.dismiss();
-//                            //设置你的操作事项
-//                        }
-//                    });
-//
-//                    builder.setNegativeButton("取消",
-//                            new android.content.DialogInterface.OnClickListener() {
-//                                public void onClick(DialogInterface dialog, int which) {
-//                                    dialog.dismiss();
-//                                }
-//                            });
-//
-//                    builder.create().show();
+
 
             }
         });

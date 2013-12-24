@@ -43,7 +43,7 @@ public class RightDialog extends Dialog {
         View layout = inflater.inflate(R.layout.right_dialog_layout, null);
 
         addContentView(layout, new LayoutParams(
-                LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+                LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
 
         if(mContainerView != null)
         {

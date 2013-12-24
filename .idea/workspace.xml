@@ -2,7 +2,9 @@
 <project version="4">
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
-      <GlobalState />
+      <GlobalState>
+        <option name="visible" value="false" />
+      </GlobalState>
     </option>
   </component>
   <component name="AndroidLayouts">
@@ -17,31 +19,37 @@
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/res/layout/view_tab_apps.xml">
+      <layout url="file://$PROJECT_DIR$/res/layout/network_dialog_layout.xml">
         <config>
           <device>tv</device>
           <state>Landscape</state>
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/res/layout/view_tab_channel_item.xml">
+      <layout url="file://$PROJECT_DIR$/res/layout/right_dialog_layout.xml">
         <config>
           <device>tv</device>
           <state>Landscape</state>
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/res/layout/view_tab_channels.xml">
+      <layout url="file://$PROJECT_DIR$/res/layout/view_tab_apk.xml">
         <config>
           <device>tv</device>
           <state>Landscape</state>
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/res/layout/view_tab_recommend_item.xml">
+      <layout url="file://$PROJECT_DIR$/res/layout/view_tab_apk_item.xml">
         <config>
           <device>tv</device>
           <state>Landscape</state>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout/view_tab_top_item.xml">
+        <config>
+          <device>tv</device>
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
@@ -52,72 +60,27 @@
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout/view_tab_watchtv.xml">
+        <config>
+          <device>tv</device>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout/view_tab_watchtv_item.xml">
+        <config>
+          <device>tv</device>
+          <state>Landscape</state>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
     </layouts>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="547f9111-4190-4747-90a9-cef7c31e5b8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/main_page_menu_apps_bg_00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/main_page_menu_pictures_bg_00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/main_page_menu_recommend_bg_00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/main_page_menu_tops_bg_00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabChannels.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabTop.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabTopItemView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/view_tab_top_item.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradlew" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\.project" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\.settings\org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\dexedLibs\android-support-v4-9c04180deadac53f103f930333b30867.jar" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\dexedLibs\annotations-06d845c7c56427b837a7ef31a3a7a9b9.jar" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\jarlist.cache" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\launcher.apk" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\app_loading_001.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\app_loading_0010.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\app_loading_0011.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\app_loading_0012.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\app_loading_002.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\app_loading_003.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\app_loading_004.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\app_loading_005.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\app_loading_006.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\app_loading_007.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\app_loading_008.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\app_loading_009.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\bg_a.9.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\bg_b.9.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\exception_dialog.9.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\homepage_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\main_page_image_phone_connect.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\main_page_image_phone_connect_tip.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\tab_recommend_7_day.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\tab_recommend_highlight_270_270.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\tab_recommend_highlight_270_548.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\tab_recommend_highlight_548_270.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\tab_recommend_highlight_548_548.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\tab_recommend_history.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\tab_recommend_item_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\res\drawable\tip_shopping.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\bin\resources.ap_" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\github\launcher\project.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wefeng/launcher/widget/CustomDrawingOrderLayout.java" afterPath="$PROJECT_DIR$/src/com/wefeng/launcher/widget/CustomDrawingOrderLayout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wefeng/launcher/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/wefeng/launcher/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabChannelsItemView.java" afterPath="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabChannelsItemView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabRecommendItemView.java" afterPath="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabRecommendItemView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/view_tab_tops.xml" afterPath="$PROJECT_DIR$/res/layout/view_tab_tops.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/libupdate.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/launcher.iml" afterPath="$PROJECT_DIR$/launcher.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="launcher.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -135,6 +98,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -171,9 +135,113 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabChannels.java" line="69" class="com.wefeng.launcher.widget.TabChannels" package="com.wefeng.launcher.widget">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabApk.java" line="76" class="com.wefeng.launcher.widget.TabApk" package="com.wefeng.launcher.widget">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabSettings.java" line="112" class="com.wefeng.launcher.widget.TabSettings$4" package="com.wefeng.launcher.widget">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/NetworkDialog.java" line="51" class="com.wefeng.launcher.widget.NetworkDialog" package="com.wefeng.launcher.widget">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/NetworkDialog.java" line="37" class="com.wefeng.launcher.widget.NetworkDialog" package="com.wefeng.launcher.widget">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/NetworkDialog.java" line="44" class="com.wefeng.launcher.widget.NetworkDialog" package="com.wefeng.launcher.widget">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/RightDialog.java" line="47" class="com.wefeng.launcher.widget.RightDialog" package="com.wefeng.launcher.widget">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/wefeng/launcher/MainActivity.java" line="203" class="com.wefeng.launcher.MainActivity.RadioFocusChangeListener" package="com.wefeng.launcher">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/wefeng/launcher/MainActivity.java" line="207" class="com.wefeng.launcher.MainActivity.RadioFocusChangeListener" package="com.wefeng.launcher">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -198,26 +266,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/MainActivity.java">
+      <file leaf-file-name="TabApk.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabApk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="59" selection-start="2853" selection-end="2853" vertical-scroll-proportion="0.0" vertical-offset="1995" max-vertical-offset="2934">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="141" column="77" selection-start="6020" selection-end="6020" vertical-scroll-proportion="0.0" vertical-offset="2538" max-vertical-offset="3096">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="211" column="20" selection-start="7124" selection-end="7124" vertical-scroll-proportion="0.0" vertical-offset="3798" max-vertical-offset="4842">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="0" selection-start="3492" selection-end="3492" vertical-scroll-proportion="0.7346939" vertical-offset="1242" max-vertical-offset="2826">
+            <state line="142" column="41" selection-start="5791" selection-end="5791" vertical-scroll-proportion="0.0" vertical-offset="2376" max-vertical-offset="3402">
               <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MediaPlayer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://Z:/gitmake/mastertrunk/frameworks/base/media/java/android/media/MediaPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="894" column="9" selection-start="40754" selection-end="40754" vertical-scroll-proportion="0.0" vertical-offset="16092" max-vertical-offset="42228">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="27" selection-start="791" selection-end="791" vertical-scroll-proportion="0.5013928" vertical-offset="0" max-vertical-offset="718">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sel_zone_title_btn.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/drawable/sel_zone_title_btn.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="27" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="1296">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TabApkItemView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabApkItemView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="38" selection-start="2404" selection-end="2404" vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="2016">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="26" selection-start="1192" selection-end="1200" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="612">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TabSettings.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabSettings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="105" column="0" selection-start="3525" selection-end="3525" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2592">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetApk.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/util/GetApk.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="111" column="34" selection-start="2854" selection-end="2865" vertical-scroll-proportion="0.0" vertical-offset="1998" max-vertical-offset="2430">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -239,26 +377,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabChannelsItemView.java" />
-        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/widget/CustomDrawingOrderLayout.java" />
-        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabChannels.java" />
-        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabRecommend.java" />
-        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabRecommendItemView.java" />
-        <option value="$PROJECT_DIR$/res/layout/view_tab_tops.xml" />
-        <option value="$PROJECT_DIR$/res/layout/view_tab_top_item.xml" />
-        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabTopItemView.java" />
-        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabApp.java" />
-        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabTop.java" />
+        <option value="$PROJECT_DIR$/res/drawable/sel_network_setup_item.xml" />
+        <option value="$PROJECT_DIR$/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/res/drawable/sel_network_setup_item_text.xml" />
+        <option value="$PROJECT_DIR$/res/layout/network_dialog_layout.xml" />
+        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/util/Wifi.java" />
+        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/widget/RightDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/widget/NetworkDialog.java" />
+        <option value="$PROJECT_DIR$/res/layout/view_tab_apk_item.xml" />
+        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabSettings.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabApkItemView.java" />
+        <option value="$PROJECT_DIR$/res/drawable/sel_zone_title_btn.xml" />
         <option value="$PROJECT_DIR$/src/com/wefeng/launcher/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabApk.java" />
         <option value="$PROJECT_DIR$/res/layout/activity_main.xml" />
+        <option value="Z:/gitmake/mastertrunk/frameworks/base/media/java/android/media/MediaPlayer.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1448" />
-    <option name="height" value="878" />
+    <option name="width" value="1440" />
+    <option name="height" value="870" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -286,7 +426,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -316,87 +455,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="launcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="launcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="launcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="launcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="widget" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="launcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="launcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="launcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="launcher" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="284" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.externalResources" />
+    <property name="options.lastSelected" value="preferences.updates" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.88.101:5555" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/libupdate.jar!/" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.88.113:5555" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="DEBUGGABLE_DEVICE" value="192.168.88.133:5555" />
+    <property name="DEBUGGABLE_PROCESS" value="com.wefeng.launcher" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="181" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -425,6 +519,7 @@
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -433,6 +528,7 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="GriffonRunConfigurationType" factoryName="Griffon">
@@ -455,11 +551,41 @@
       <ExternalSystemSettings>
         <option name="externalProjectPath" />
         <option name="externalSystemIdString" value="GRADLE" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
         <option name="taskNames">
           <list />
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -515,6 +641,7 @@
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -523,6 +650,7 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="false" name="launcher" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -531,6 +659,7 @@
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -539,6 +668,7 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <RunnerSettings RunnerId="AndroidDebugRunner" />
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
@@ -546,12 +676,6 @@
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Android Application.launcher" />
     </list>
-    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
@@ -566,6 +690,24 @@
       <AnalysisUIOptions />
     </option>
   </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false">C:\Documents and Settings\Administrator\Application Data\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="547f9111-4190-4747-90a9-cef7c31e5b8e" name="Default" comment="" />
@@ -574,36 +716,83 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1448" height="878" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298611" sideWeight="0.528" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39888424" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32496512" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933334" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.59553695" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.528" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.528" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15656565" sideWeight="0.40446305" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32357043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.30727762" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932332" sideWeight="0.529321" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29428172" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18796992" sideWeight="0.529321" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.528" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32932332" sideWeight="0.529321" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47067901" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -617,23 +806,21 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/android-sdk/sources/android-15/android/content/Context.java">
+    <entry file="jar://$PROJECT_DIR$/libs/netsetup.jar!/com/wefeng/hisi/network/EthCtl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1443" column="43" selection-start="64314" selection-end="64330" vertical-scroll-proportion="0.0" vertical-offset="25203" max-vertical-offset="39114">
+        <state line="35" column="16" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.6980803" vertical-offset="212" max-vertical-offset="810" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/NetworkDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="21" selection-start="1943" selection-end="1943" vertical-scroll-proportion="0.0" vertical-offset="746" max-vertical-offset="2898">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/android-sdk/sources/android-15/com/android/internal/os/ZygoteInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="788" column="56" selection-start="26866" selection-end="26866" vertical-scroll-proportion="0.57723576" vertical-offset="13251" max-vertical-offset="13752">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/view_tab_recommend_item.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/view_tab_apk.xml">
       <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2628">
           <folding />
         </state>
       </provider>
@@ -641,26 +828,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/view_tab_channel_item.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabChannelsItemView.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/view_tab_apk_item.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1470" selection-end="1575" vertical-scroll-proportion="0.0" vertical-offset="447" max-vertical-offset="1170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/view_tab_channels.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="55" selection-start="622" selection-end="641" vertical-scroll-proportion="-5.1923075" vertical-offset="0" max-vertical-offset="2628">
+        <state line="27" column="13" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
@@ -668,95 +838,70 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/view_tab_top_item.xml">
+    <entry file="file://D:/android-sdk/sources/android-15/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="48" selection-start="559" selection-end="582" vertical-scroll-proportion="-10.384615" vertical-offset="0" max-vertical-offset="504">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+        <state line="12421" column="16" selection-start="465091" selection-end="465091" vertical-scroll-proportion="0.33224222" vertical-offset="221845" max-vertical-offset="268560" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/view_tab_apps.xml">
-      <provider editor-type-id="text-editor">
-        <state line="9" column="48" selection-start="390" selection-end="413" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2412">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabRecommendItemView.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/util/GetApk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="24" selection-start="901" selection-end="901" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1620">
+        <state line="111" column="34" selection-start="2854" selection-end="2865" vertical-scroll-proportion="0.0" vertical-offset="1531" max-vertical-offset="2142">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabApp.java">
+    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="5" selection-start="1678" selection-end="1678" vertical-scroll-proportion="-29.692308" vertical-offset="272" max-vertical-offset="1620">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#847#1172#0" expanded="true" />
-            <element signature="e#1165#1166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabChannels.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="0" selection-start="4369" selection-end="6604" vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="2358">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/view_tab_tops.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="43" selection-start="345" selection-end="363" vertical-scroll-proportion="-5.5384617" vertical-offset="0" max-vertical-offset="1458">
+        <state line="2" column="17" selection-start="68" selection-end="68" vertical-scroll-proportion="0.08591885" vertical-offset="0" max-vertical-offset="936">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabTopItemView.java">
+    <entry file="file://$PROJECT_DIR$/res/drawable/sel_zone_title_btn.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="34" selection-start="1831" selection-end="1851" vertical-scroll-proportion="-10.884615" vertical-offset="797" max-vertical-offset="1764">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabTop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="25" selection-start="2821" selection-end="2830" vertical-scroll-proportion="-1.4807693" vertical-offset="1363" max-vertical-offset="1872">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#784#1104#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
-          </folding>
+        <state line="11" column="27" selection-start="496" selection-end="496" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1296">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="59" selection-start="2853" selection-end="2853" vertical-scroll-proportion="0.0" vertical-offset="1995" max-vertical-offset="2934">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="211" column="20" selection-start="7124" selection-end="7124" vertical-scroll-proportion="0.0" vertical-offset="2944" max-vertical-offset="4212">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabApk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="77" selection-start="6020" selection-end="6020" vertical-scroll-proportion="0.0" vertical-offset="1787" max-vertical-offset="2718">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="26" selection-start="1192" selection-end="1200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="0" selection-start="3525" selection-end="3525" vertical-scroll-proportion="0.0" vertical-offset="1062" max-vertical-offset="2232">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wefeng/launcher/widget/TabApkItemView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="38" selection-start="2404" selection-end="2404" vertical-scroll-proportion="0.0" vertical-offset="1111" max-vertical-offset="1818">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="3492" selection-end="3492" vertical-scroll-proportion="0.7346939" vertical-offset="1242" max-vertical-offset="2826">
+        <state line="142" column="41" selection-start="5791" selection-end="5791" vertical-scroll-proportion="0.0" vertical-offset="2376" max-vertical-offset="3402">
           <folding />
         </state>
       </provider>
@@ -764,6 +909,107 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://Z:/gitmake/mastertrunk/frameworks/base/media/java/android/media/MediaPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="894" column="9" selection-start="40754" selection-end="40754" vertical-scroll-proportion="0.0" vertical-offset="16092" max-vertical-offset="42228">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="27" selection-start="791" selection-end="791" vertical-scroll-proportion="0.5013928" vertical-offset="0" max-vertical-offset="718">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Android 4.0.3 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android|launcher</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Android 4.0.3 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>libupdate</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_gravity="center_horizontal"
-    android:paddingLeft="58.0dip"
-    android:paddingTop="24.0dip" >
+    android:paddingLeft="58dip"
+    android:paddingTop="24dip" >
 
     <com.wefeng.launcher.widget.CustomDrawingOrderLayout
         android:id="@+id/tab_settings_container"

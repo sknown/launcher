@@ -1,100 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id = "@+id/network_dialog_layout">
+    android:id="@+id/network_dialog_layout"
+    android:background="@drawable/network_dialog_bg">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="68dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/network_setup"
         android:id="@+id/textView"
-        android:layout_gravity="left|center_vertical"
         android:textSize="40sp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="30dp"
         />
 
-    <RelativeLayout
+    <LinearLayout
+        android:background="@drawable/item_selector_bg"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="10dp">
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:paddingLeft="30dp"
+                android:background="@drawable/item_selector_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/auto_set_wired_network_ip"
+                android:id="@+id/tv_auto_wired"
+                android:layout_gravity="left|center_vertical"
+                android:textSize="30sp"
+                android:textColor="@drawable/sel_network_setup_item_text"                 />
 
         <TextView
-            android:background="@drawable/sel_network_setup_item_bg"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:layout_width="match_parent"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="12dp"
+            android:paddingLeft="30dp"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:id="@+id/tv_wired_auto_stated"
+            android:visibility="gone"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/item_selector_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp">
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:paddingLeft="30dp"
+                android:background="@drawable/item_selector_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/wireless_network_setup"
+                android:id="@+id/tv_auto_wireless"
+                android:layout_gravity="left|center_vertical"
+                android:textSize="30sp"
+                android:textColor="@drawable/sel_network_setup_item_text" />
+
+        <TextView
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="12dp"
+            android:paddingLeft="30dp"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/auto_set_wired_network_ip"
-            android:id="@+id/tv_auto_wired"
-            android:layout_gravity="left|center_vertical"
-            android:textSize="30sp"
-            android:textColor="@drawable/sel_network_setup_item_text"
-            android:paddingLeft="30dp" />
+            android:id="@+id/tv_wireless_auto_stated"
+            ></TextView>
 
-        <ProgressBar
-            style="@android:style/Widget.ProgressBar.Inverse"
-            android:layout_width="50dp"
-            android:layout_height="20dp"
-            android:id="@+id/progressbar_auto_wired"
-            android:max="100"
-            android:layout_alignParentLeft="false"
-            android:layout_centerInParent="true"
-            android:layout_alignParentRight="true"
-            android:paddingRight="30dp"
-            android:visibility="gone" />
-    </RelativeLayout>
+        <ListView
+            android:layout_marginLeft="12dp"
+            android:listSelector="@drawable/item_selector_bg"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:id="@+id/lv_wireless_ssid"
+            ></ListView>
+    </LinearLayout>
 
-    <RelativeLayout
-        android:orientation="vertical"
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="10dp">
-
-    <TextView
-        android:background="@drawable/sel_network_setup_item_bg"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/wireless_network_setup"
-        android:id="@+id/tv_auto_wireless"
-        android:layout_gravity="left|center_vertical"
-        android:textSize="30sp"
-        android:paddingLeft="30dp"
-        android:textColor="@drawable/sel_network_setup_item_text" />
-
-        <ProgressBar
-            style="@android:style/Widget.ProgressBar.Inverse"
-            android:layout_width="50dp"
-            android:layout_height="20dp"
-            android:id="@+id/progressbar_auto_wireless"
-            android:max="100"
-            android:layout_alignParentLeft="false"
-            android:layout_centerInParent="true"
-            android:layout_alignParentRight="true"
-            android:paddingRight="30dp"
-            android:visibility="gone" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="10dp">
+        android:layout_height="wrap_content"     >
 
         <TextView
-            android:background="@drawable/sel_network_setup_item_bg"
+            android:layout_marginLeft="12dp"
+            android:paddingLeft="30dp"
+            android:background="@drawable/item_selector_bg"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:layout_width="match_parent"
@@ -104,21 +113,8 @@
             android:id="@+id/tv_manul_wired"
             android:layout_gravity="left|center_vertical"
             android:textSize="30sp"
-            android:paddingLeft="30dp"
             android:textColor="@drawable/sel_network_setup_item_text" />
-
-        <ProgressBar
-            style="@android:style/Widget.ProgressBar.Inverse"
-            android:layout_width="50dp"
-            android:layout_height="20dp"
-            android:id="@+id/progressbar_manul_wired"
-            android:max="100"
-            android:layout_alignParentLeft="false"
-            android:layout_centerInParent="true"
-            android:layout_alignParentRight="true"
-            android:paddingRight="30dp"
-            android:visibility="gone" />
-    </RelativeLayout>
+    </LinearLayout>
 
 
 </LinearLayout>

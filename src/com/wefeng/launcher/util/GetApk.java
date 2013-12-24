@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,6 +21,7 @@ public class GetApk {
     private PackageManager mManager = null;
     private List<PackageInfo> mApkList = null;
     private HashMap<String, Drawable> mApkHash = null;
+    private HashMap<String, PackageInfo> mApkpage = null;
 
     private Thread mInitApkThread = new Thread()
     {
@@ -29,12 +31,32 @@ public class GetApk {
             mInitApkInfo.run();
         }
     };
+    private boolean checkapk(PackageInfo apk)
+    {
+    	Log.i("GetAPK",apk.packageName);
+    	if(apk.packageName.equals("com.unionman.browser")
+    			||apk.packageName.equals("com.unionman.settingwizard")
+    			||apk.packageName.equals("com.explorer")
+    			||apk.packageName.equals("com.hisilicon.dlna.settings")
+    			||apk.packageName.equals("com.hisilicon.dlna.mediacenter")
+    			||apk.packageName.equals("com.hycstv.android")
+    			||apk.packageName.equals("com.funshion.video")
+    			||apk.packageName.equals("com.skyworth.onlinemovie.letv.csapp")
+    			||apk.packageName.equals("com.tencent.qqlivehd")
+    			||apk.packageName.equals("com.sohutv.tv")
+    			||apk.packageName.equals("com.hiapk.markettv"))
+    	{
+    		return true;
+    	}
+    	return false;
+    }
 
     private Runnable mInitApkInfo = new Runnable() {
         @Override
         public void run() {
             mApkList = getInstallerApk();
             mApkHash = new HashMap<String, Drawable>();
+            mApkpage = new HashMap<String, PackageInfo>();
 
             for(PackageInfo apk:mApkList)
             {
@@ -42,15 +64,16 @@ public class GetApk {
                 String label = getApkLabel(apk);
 
                 mApkHash.put(label, icon);
+                mApkpage.put(label, apk);
             }
 
-            mListen.loadApkFinishListen(mApkHash, mApkList);
+            mListen.loadApkFinishListen(mApkHash, mApkpage);
         }
     };
 
     public interface LoadApkFinishListen
     {
-        void loadApkFinishListen(HashMap<String, Drawable> apkList, List<PackageInfo> packageList);
+        void loadApkFinishListen(HashMap<String, Drawable> apkList, HashMap<String, PackageInfo> packageList);
     }
 
     private LoadApkFinishListen mListen = null;
@@ -58,10 +81,10 @@ public class GetApk {
     public GetApk(Context context, LoadApkFinishListen listen)
     {
         mContext = context;
-
+        mListen = listen;
         mManager = context.getPackageManager();
         mInitApkThread.start();
-        mListen = listen;
+
     }
 
     public HashMap<String, Drawable> getApk()
@@ -77,8 +100,9 @@ public class GetApk {
         for (int i = 0; i < packages.size(); i++) {
             PackageInfo pak = packages.get(i);
             //判断是否为非系统预装的应用程序
-            if ((pak.applicationInfo.flags & pak.applicationInfo.FLAG_SYSTEM) <= 0) {
                 // customs applications
+            if(checkapk(pak))
+            {
                 apps.add(pak);
             }
         }

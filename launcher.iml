@@ -14,6 +14,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="android-support-v4" level="project" />
+    <orderEntry type="library" name="netsetup" level="project" />
+    <orderEntry type="library" name="libupdate" level="project" />
   </component>
 </module>
 

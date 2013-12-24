@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name ="button_focus_color">#e64c65</color>
     <color name="white">#ffffffff</color>
     <color name="black">#ff000000</color>
     <color name="green">#ff00ff00</color>
@@ -43,4 +44,6 @@
     <color name="right_dialog_bg">#90000000</color>
     <color name="network_setup_item_text_normal">#ffffff</color>
     <color name="network_setup_item_text_hl">#000000</color>
+    <color name="black_deep">#FF121212</color>
+    <color name="blue">#FF177CB0</color>
 </resources>

@@ -1,6 +1,7 @@
 package com.wefeng.launcher;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.os.Handler;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,8 +42,9 @@ public class MainActivity extends Activity {
     private RadioGroup mRadioGroup = null;
     private GetApk mApk = null;
     private HashMap<String, Drawable> mApkList = null;
-    private List<PackageInfo> mPackageList = null;
+    private HashMap<String, PackageInfo>  mPackageList = null;
     private TabApk mTabApk = null;
+    private MyOnPageChangeListener myOnPageChangeListener;
 
     private TextView mTimeText = null;
     private int TIME_REFRESH_TIME = 1000;
@@ -59,7 +62,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+        Log.i("hello","onCreate");
 		mViewPager = (ViewPager) findViewById(R.id.main_page_view_page); 
 		addPage();
 		
@@ -76,7 +79,7 @@ public class MainActivity extends Activity {
 
         mApk = new GetApk(this, new GetApk.LoadApkFinishListen() {
             @Override
-            public void loadApkFinishListen(HashMap<String, Drawable> apkList, List<PackageInfo> packageList) {
+            public void loadApkFinishListen(HashMap<String, Drawable> apkList, HashMap<String, PackageInfo> packageList) {
                 mApkList = apkList;
                 mPackageList = packageList;
 
@@ -162,7 +165,8 @@ public class MainActivity extends Activity {
         };  
         mViewPager.setAdapter(pagerAdapter);  
         mViewPager.setCurrentItem(0); 
-        mViewPager.setOnPageChangeListener(new MyOnPageChangeListener()); 
+        myOnPageChangeListener = new MyOnPageChangeListener();
+        mViewPager.setOnPageChangeListener(myOnPageChangeListener);
         
         
         mRadioTitle1 = (RadioButton)this.findViewById(R.id.tab_recommend_text);
@@ -183,12 +187,48 @@ public class MainActivity extends Activity {
         mRadioTitle3.setTextColor(getResources().getColor(R.color.white));
 
         //mRadioTitle4.setOnClickListener(new MyOnClickListener(3));
-        mRadioTitle4.setOnFocusChangeListener(new RadioFocusChangeListener(3));
+        mRadioTitle4.setOnFocusChangeListener(RadioFocusChangeListener3);
         mRadioTitle4.setTextColor(getResources().getColor(R.color.white));
 
         mRadioGroup = (RadioGroup)findViewById(R.id.main_page_bottom_pannel);
         
     }
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        Log.i("hello","onNewIntent");
+        String str = intent.getAction();
+        if(str.equals("settings"))
+        {
+            Log.i("hello","onNewIntent_settings");
+            myOnPageChangeListener.onPageSelected(3);
+            selectPage(3);
+        }
+    }
+    private View.OnFocusChangeListener RadioFocusChangeListener3 = new View.OnFocusChangeListener() {
+        @Override
+        public void onFocusChange(View view, boolean b) {
+            Log.i("hello","RadioFocusChangeListener3" + b);
+            RadioButton rb = (RadioButton)view;
+            if(b)
+            {
+                if(!rb.isChecked())
+                {
+                    rb.setTextColor(getResources().getColor(R.color.black));
+                    rb.setChecked(true);
+                    selectPage(3);
+                }
+                else
+                {
+                    rb.setTextColor(getResources().getColor(R.color.black));
+                }
+            }
+            else
+            {
+                rb.setTextColor(getResources().getColor(R.color.white));
+            }
+        }
+    };
     private class RadioFocusChangeListener implements View.OnFocusChangeListener {
 
         private int mIndex=0;
@@ -239,16 +279,10 @@ public class MainActivity extends Activity {
 	
 	public class MyOnPageChangeListener implements OnPageChangeListener{  
         
-        public void onPageScrollStateChanged(int arg0) {  
-              
-              
-        }  
-  
-        public void onPageScrolled(int arg0, float arg1, int arg2) {  
-              
-              
-        }  
-  
+        public void onPageScrollStateChanged(int arg0) {}
+ 
+        public void onPageScrolled(int arg0, float arg1, int arg2) {}
+    
         public void onPageSelected(int arg0) {
             RadioButton rb = (RadioButton)mRadioGroup.getChildAt(arg0);
 

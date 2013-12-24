@@ -25,4 +25,17 @@
     <string name="wireless_network_setup">无线网络设置</string>
     <string name="manual_set_wired_network_ip">手动设置有线网络IP</string>
     <string name="more_app">更多应用</string>
+    <string name="password">密码&#160;&#160;:</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="connect">连接</string>
+    <string name="forget">忘记</string>
+    <string name="not_reach">不在范围内</string>
+    <string name="aleady_connect">已连接</string>
+    <string name="connecting">正在连接</string>
+    <string name="auto_get_ip_please_wait">自动获取IP,请稍候\u2026</string>
+    <string name="obtaining_ipaddr">正在连接</string>
+    <string name="authentivating">正在识别</string>
+    <string name="wired_auto_subhead">按确定键自动获取IP</string>
+    <string name="connect_fail">连接失败</string>
+
 </resources>

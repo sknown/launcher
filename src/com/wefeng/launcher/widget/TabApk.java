@@ -146,7 +146,7 @@ public class TabApk extends FrameLayout {
 
     }
 
-    public void setApk(HashMap<String,Drawable> apkList, List<PackageInfo> packageList)
+	public void setApk(HashMap<String,Drawable> apkList, HashMap<String,PackageInfo> packageList)
     {
         int i = BUTTON_COUNT-2;
 
@@ -155,11 +155,11 @@ public class TabApk extends FrameLayout {
         {
             String label = (String)iterator.next();
             Drawable icon = apkList.get(label);
-
+            PackageInfo packInfo= packageList.get(label);
             TabApkItemView view = mApkButton.get(i);
             view.setApkImage(icon);
             view.setTitle(label);
-            view.setTag(packageList.get(i).packageName);
+            view.setTag(packInfo.packageName);
             i--;
         }
     }
